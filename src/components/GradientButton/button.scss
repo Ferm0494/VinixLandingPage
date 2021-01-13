@@ -1,0 +1,14 @@
+.gradient-button{
+    background: rgb(175,45,140);
+    background: linear-gradient(113deg, rgba(175,45,140,1) 40%, rgba(81,119,183,1) 74%);
+    border: none;
+    color: white !important;
+    padding: 7px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 200px;
+    cursor: pointer;
+    font-family: 'Mada-SemiBold'
+}
+

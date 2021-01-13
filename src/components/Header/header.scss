@@ -1,0 +1,21 @@
+@font-face{
+    font-family: 'Mada-SemiBold';
+    src: url('../../assets/fonts/Mada-SemiBold.ttf')
+}
+
+.logo{
+    
+    height: 2em;
+}
+
+.options{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    button{
+        color:#6C6C6C;
+        font-family: 'Mada-SemiBold';
+        text-transform: none;
+        font-size: 1.1em;
+    }
+}
