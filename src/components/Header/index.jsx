@@ -9,7 +9,7 @@ import GradientButton from '../GradientButton'
 const Header = ()=>{
     const classes = useStyles();
     return(
-        <AppBar position="static" className="header" color="transparent" style={{boxShadow:'none',width:'90%'}} >
+        <AppBar position="static" className="header position-absolute " color="transparent" style={{boxShadow:'none',width:'90%'}} >
         <Toolbar>
          <Row className="w-100">
          <Col md={2}>

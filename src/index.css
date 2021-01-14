@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gray-background{
+  background-color: rgb(224, 224, 227,0.5)
+}
+
+#waved{
+
+  background: url('./assets/WaveBackground.png');
+  background-size: cover
+}
