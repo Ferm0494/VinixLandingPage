@@ -7,6 +7,8 @@ import Image1 from './assets/1stImage.png'
 import Image2 from './assets/2ndImage.png'
 import Image3 from './assets/3rdImage.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {List,ListItem,ListItemIcon,ListItemText} from '@material-ui/core'
+import {CheckCircleOutline} from '@material-ui/icons'
 
 
 
@@ -87,14 +89,178 @@ const App = () => {
               </Col>
               <Col className="d-flex justify-content-center align-items-center flex-column " md={6}>
                 <h3>Pricing Plans </h3>
-                <p> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ex duis elit incididunt officia reprehenderit eu. Aliqua elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.
-
-                      Enim cupidatat quis enim ea nostrud adipisicing consequat aliquip anim sunt voluptate. Anim voluptate eu eu consectetur commodo eiusmod qui amet cupidatat duis incididunt consequat cupidatat. Consequat ad veniam voluptate magna ipsum non labore do dolore dolor quis aliqua eu. Duis reprehenderit fugiat adipisicing pariatur voluptate laboris laboris esse consectetur velit. Ipsum consequat veniam velit consectetur adipisicing irure nostrud laboris. Aliquip ex nisi nostrud cillum qui velit cupidatat duis.
-
-                      Non esse exercitation ullamco ea eu aliquip. Cillum nostrud amet anim veniam sunt amet pariatur eiusmod in quis ea Lorem id. Duis elit enim irure officia veniam adipisicing eiusmod magna aliqua dolor in nulla duis. Sint eu voluptate ipsum incididunt est velit. Deserunt nostrud deserunt est sint officia do amet qui. Consectetur elit officia laboris reprehenderit fugiat dolore do eiusmod sint cillum aliquip reprehenderit commodo eu. </p>
+                <p> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ex duis elit incididunt officia reprehenderit eu. Aliqua elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
           </div>
         </Col>
+      </SplitContainer>
+      <SplitContainer>
+        <Col className="d-flex justify-content-center">
+          <div className="grid-container">
+          {/* FIRST CARD */}
+          <div>
+            <div className="p-2 pricing-card card shadow-sm border-bottom-0">
+                <h5>Free</h5>
+                <p>Small text...</p>
+                <h4>$0.00<span>/month</span></h4>
+                <hr/>
+                <List>
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                </List>
+              </div>
+              <GradientButton title="Title1" className="w-100 rounded"/>
+            </div>
+            {/* SECOND CARD */}
+            <div>
+            <div className="p-2 pricing-card card shadow-sm border-bottom-0">
+                <h5>Free</h5>
+                <p>Small text...</p>
+                <h4>$0.00<span>/month</span></h4>
+                <hr/>
+                <List>
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                </List>
+              </div>
+              <GradientButton title="Title1" className="w-100 rounded"/>
+            </div>
+
+            {/* THIRD CARD */}
+            <div>
+            <div className="p-2 pricing-card card shadow-sm border-bottom-0">
+                <h5>Free</h5>
+                <p>Small text...</p>
+                <h4>$0.00<span>/month</span></h4>
+                <hr/>
+                <List>
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                </List>
+              </div>
+              <GradientButton title="Title1" className="w-100 rounded"/>
+            </div>
+            {/* FOURTH CARD */}
+            <div>
+            <div className="p-2 pricing-card card shadow-sm border-bottom-0">
+                <h5>Free</h5>
+                <p>Small text...</p>
+                <h4>$0.00<span>/month</span></h4>
+                <hr/>
+                <List>
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                  <ListItem className="p-0">
+                    <ListItemIcon>
+                      <CheckCircleOutline/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                    </ListItemIcon>
+                  </ListItem>
+
+                </List>
+              </div>
+              <GradientButton title="Title1" className="w-100 rounded"/>
+            </div>
+          </div>
+        </Col>
+
       </SplitContainer>
     </div>
   );
