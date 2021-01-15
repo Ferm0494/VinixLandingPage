@@ -6,6 +6,10 @@ import {Col} from 'react-bootstrap'
 import Image1 from './assets/1stImage.png'
 import Image2 from './assets/2ndImage.png'
 import Image3 from './assets/3rdImage.png'
+import Image4 from './assets/4thImage.png'
+import Image5 from './assets/5thImage.png'
+import Image6 from './assets/6thImage.png'
+import Image7 from './assets/7thImage.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {List,ListItem,ListItemIcon,ListItemText} from '@material-ui/core'
 import {CheckCircleOutline} from '@material-ui/icons'
@@ -22,9 +26,9 @@ const App = () => {
           <Col xs={1} className="gray-background">
           </Col>
          <Col className="d-flex flex-column justify-content-center align-items-center gray-background ">
-         <h3>
+         <h2>
                   Header title
-         </h3>
+         </h2>
                   Nisi sint ipsum laborum sunt nulla quis sit cupidatat voluptate. Id pariatur quis cupidatat duis amet pariatur do anim eiusmod ullamco culpa aute nulla proident. Adipisicing eiusmod labore deserunt adipisicing cupidatat ex. Occaecat duis id duis irure tempor magna qui sit fugiat exercitation minim eu laboris sunt.
 
                   Deserunt amet excepteur nostrud culpa eiusmod. Eiusmod ullamco reprehenderit non dolor sit est mollit ut aliquip enim laboris cillum labore. Ad eiusmod sit aliquip et cupidatat dolor labore amet aliquip occaecat. Laboris elit dolore aute qui elit id in enim anim esse est laborum non.
@@ -41,11 +45,11 @@ const App = () => {
            </svg>     
       </div>
       <SplitContainer>
-            <Col className="d-flex justify-content-center">
+            <Col className="d-flex justify-content-center" md={6}>
                 <img src={Image2} className="image2"/>
             </Col>
-            <Col>
-            <h2>Header Title</h2>
+            <Col md={4}>
+            <h3>Header Title</h3>
               Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
 
               Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
@@ -94,7 +98,7 @@ const App = () => {
           </div>
         </Col>
       </SplitContainer>
-      <SplitContainer>
+      <SplitContainer className="fixed-container">
         <Col className="d-flex justify-content-center">
           <div className="grid-container">
           {/* FIRST CARD */}
@@ -261,6 +265,79 @@ const App = () => {
           </div>
         </Col>
 
+      </SplitContainer>
+      <SplitContainer className="cont d-flex align-items-center">
+       
+             <Col md={3}/>
+              <Col className="d-flex  align-items-center flex-column " md={6}>
+                <h3>Vinix Features </h3>
+                <p> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ex duis elit incididunt officia reprehenderit eu. Aliqua elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
+              </Col>
+              <Col md={3}/>
+      </SplitContainer>
+      <SplitContainer>
+            <Col className="d-flex justify-content-center" md={6}>
+                <img src={Image4} className="image2"/>
+            </Col>
+            <Col md={4}>
+            <h3>Header Title</h3>
+              Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+
+              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
+
+              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.
+
+              </Col>
+      </SplitContainer>
+      <SplitContainer className="cont pt-3">
+            <Col md={1}/>
+            <Col md={4}>
+            <h3>Header Title</h3>
+              Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+
+              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
+
+              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.
+              </Col>
+              <Col className="d-flex justify-content-center" md={6}>
+                <img src={Image5} className="image2"/>
+            </Col>
+      </SplitContainer>
+      <SplitContainer className="cont pt-3">
+            <Col md={1}/>
+            <Col  md={6}>
+                <img src={Image6} className="image2"/>
+            </Col>
+            <Col md={4}>
+            <h3>Header Title</h3>
+              Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+
+              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
+
+              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.
+
+              </Col>
+      </SplitContainer>
+      <SplitContainer className="cont pt-3">
+            <Col md={1}/>
+            <Col md={4}>
+            <h3>Header Title</h3>
+              Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+
+              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
+
+              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.
+              </Col>
+              <Col className="d-flex justify-content-end " md={6}>
+                <img src={Image7} className="image2"/>
+            </Col>
+      </SplitContainer>
+      <SplitContainer className="small-container">
+        <Col md={1}/>
+        <Col md={10} id="info-matrix" className="rounded">
+
+        </Col>
+        <Col md={1}/>
       </SplitContainer>
     </div>
   );

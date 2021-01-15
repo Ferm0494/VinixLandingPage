@@ -2,9 +2,9 @@ import React from 'react';
 import {Row} from 'react-bootstrap'
 import './index.scss'
 
-const SplitContainer = ({children}) => {
+const SplitContainer = ({children,className}) => {
     return (
-        <Row className="cont">
+        <Row className={className?  className : 'cont'}>
             {children}
         </Row>
         
