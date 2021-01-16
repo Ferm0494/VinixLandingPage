@@ -334,7 +334,18 @@ const App = () => {
       </SplitContainer>
       <SplitContainer className="small-container">
         <Col md={1}/>
-        <Col md={10} id="info-matrix" className="rounded">
+        <Col md={10} id="info-matrix" className="rounded d-flex p-4 ">
+          <Col>
+              <h5 className="text-white ">A part of the Matrix ecosystem</h5>
+              <p className="text-white">Consequat irure sunt incididunt aliqua Lorem. Labore velit ipsum nisi irure et sit sint consectetur ad dolor cillum est ipsum. Nostrud et mollit laborum nisi. Laborum ad laboris laboris in pariatur Lorem elit sint reprehenderit exercitation cupidatat. Ut laborum fugiat dolore veniam eiusmod.
+
+              Eiusmod eiusmod adipisicing magna irure quis. Aute id ea quis est sunt officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
+
+              Par. Eiusmod cupidatat do officia eiusmod esse pariatur do pariatur pariatur.</p>
+          </Col>
+          <Col >
+          Hello?
+          </Col>
 
         </Col>
         <Col md={1}/>
