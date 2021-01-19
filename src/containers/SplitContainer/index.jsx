@@ -1,12 +1,16 @@
 import React from 'react';
-import {Row} from 'react-bootstrap'
+import {Row,Container} from 'react-bootstrap'
 import './index.scss'
 
 const SplitContainer = ({children,className}) => {
     return (
-        <Row className={className?  className : 'cont'}>
-            {children}
-        </Row>
+        <Container className={className?  `${className} px-0` : 'cont m-0 px-0'} fluid>
+            <Row className="m-0" >
+                {children}
+            </Row>
+
+        </Container>
+        
         
     );
 }

@@ -22,23 +22,20 @@ import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube} from 'rea
 const App = () => {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <div>
-        <SplitContainer className="cont gray-background m-0">
-          <Col  sm={1}/>
-         
-         <Col className=" d-flex flex-column justify-content-center  " sm={6} >
-         <h2>
-                  Header title
-         </h2>
-                  Nisi sint ipsum laborum sunt nulla quis sit cupidatat voluptate. Id pariatur quis cupidatat duis amet pariatur do anim eiusmod ullamco culpa aute nulla proident. Adipisicing eiusmod labore deserunt adipisicing cupidatat ex. Occaecat duis id duis irure tempor magna qui sit fugiat exercitation minim eu laboris sunt.
-
-                  Deserunt amet excepteur nostrud culpa eiusmod. Eiusmod ullamco reprehenderit non dolor sit est mollit ut aliquip enim laboris cillum labore. Ad eiusmod sit aliquip et cupidatat dolor labore amet aliquip occaecat. Laboris elit dolore aute qui elit id in enim anim esse est laborum non.
-
-                  Ullamco velit aliqua cupidatat est magna exercitation ea id. Est ipsum sint elit aliqua aliqua Lorem duis consectetur ad cupidatat sunt. Reprehenderit cupidatat dolor proident consequat eiusmod fugiat tempor ad veniam. Proident nostrud nulla commodo occaecat ullamco labore do consectetur proident laboris.    
+        <SplitContainer className="cont gray-background m-0 px-0">
+         <Col className="d-md-block d-none" md={1}/>
+         <Col className=" d-flex flex-column justify-content-center align-items-start" md={5} lg={3} >
+      
+         <h2> Build and Connect Vinix Blast App </h2>   
+          <p>In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
+          <GradientButton   title="Get Vinix Blast" />
+        
+                  
          </Col>
 
-         <Col className="d-flex justify-content-end px-0" sm={5} >
+         <Col className="d-flex justify-content-end px-0" md={6} lg={7} >
             <img src={Image1} className="image1"/>
          </Col>
         </SplitContainer>
@@ -85,9 +82,9 @@ const App = () => {
          <Col md={3}>
         </Col>
       </SplitContainer>
-      <SplitContainer>
-        <Col>
-          <div id="waved" className="w-100 h-100 d-flex justify-content-between flex-column align-items-center" >
+      <SplitContainer className="cont m-0">
+        <Col id="waved">
+          <div className="w-100 h-100 d-flex justify-content-between flex-column align-items-center" >
               <Col className="mt-5 pt-5  d-flex justify-content-around align-items-start" md={4} >
                   <GradientButton title="Windows" />
                   <GradientButton title="Linux" />
@@ -100,7 +97,7 @@ const App = () => {
           </div>
         </Col>
       </SplitContainer>
-      <SplitContainer className="fixed-container">
+      <SplitContainer className=" fixed-container">
         <Col className="d-flex justify-content-center">
           <div className="grid-container">
           {/* FIRST CARD */}

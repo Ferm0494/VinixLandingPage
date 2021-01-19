@@ -1,11 +1,12 @@
 .cont{
     height:35em;
+    width:100%;
    
 }
 
 .image1{
-    height:35em;
-    width:35em;
+    height:40em;
+    width:40em;
 }
 
 .image2{
@@ -13,3 +14,11 @@
     width:27em;
 }
 
+
+
+@media (max-width: 991.98px) { 
+    .image1{
+      width: 25em;
+      height: 25em;
+    }
+   }
