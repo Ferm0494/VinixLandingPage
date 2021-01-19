@@ -11,7 +11,7 @@ import Image5 from './assets/5thImage.png'
 import Image6 from './assets/6thImage.png'
 import Image7 from './assets/7thImage.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {List,ListItem,ListItemIcon,ListItemText} from '@material-ui/core'
+import {List,ListItem,ListItemIcon,ListItemText, ListSubheader} from '@material-ui/core'
 import {CheckCircleOutline} from '@material-ui/icons'
 import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube} from 'react-icons/all'
 
@@ -24,22 +24,22 @@ const App = () => {
     <div>
       <Header/>
       <div>
-        <SplitContainer>
-          <Col  className="gray-background bg-danger" sm={1}/>
+        <SplitContainer className="cont gray-background m-0">
+          <Col  sm={1}/>
          
-         <Col className="d-flex flex-column justify-content-center align-items-center gray-background bg-primary " sm={6} >
-         {/* <h2>
+         <Col className=" d-flex flex-column justify-content-center  " sm={6} >
+         <h2>
                   Header title
          </h2>
                   Nisi sint ipsum laborum sunt nulla quis sit cupidatat voluptate. Id pariatur quis cupidatat duis amet pariatur do anim eiusmod ullamco culpa aute nulla proident. Adipisicing eiusmod labore deserunt adipisicing cupidatat ex. Occaecat duis id duis irure tempor magna qui sit fugiat exercitation minim eu laboris sunt.
 
                   Deserunt amet excepteur nostrud culpa eiusmod. Eiusmod ullamco reprehenderit non dolor sit est mollit ut aliquip enim laboris cillum labore. Ad eiusmod sit aliquip et cupidatat dolor labore amet aliquip occaecat. Laboris elit dolore aute qui elit id in enim anim esse est laborum non.
 
-                  Ullamco velit aliqua cupidatat est magna exercitation ea id. Est ipsum sint elit aliqua aliqua Lorem duis consectetur ad cupidatat sunt. Reprehenderit cupidatat dolor proident consequat eiusmod fugiat tempor ad veniam. Proident nostrud nulla commodo occaecat ullamco labore do consectetur proident laboris.     */}
+                  Ullamco velit aliqua cupidatat est magna exercitation ea id. Est ipsum sint elit aliqua aliqua Lorem duis consectetur ad cupidatat sunt. Reprehenderit cupidatat dolor proident consequat eiusmod fugiat tempor ad veniam. Proident nostrud nulla commodo occaecat ullamco labore do consectetur proident laboris.    
          </Col>
 
-         <Col className="d-flex flex-column  justify-content-start gray-background align-items-end p-0 bg-warning mr-2 "  sm={5} >
-            {/* <img src={Image1} className="image1 img-fluid"/> */}
+         <Col className="d-flex justify-content-end px-0" sm={5} >
+            <img src={Image1} className="image1"/>
          </Col>
         </SplitContainer>
            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -370,8 +370,8 @@ const App = () => {
         <path className="fer" fill-opacity="1" d="M0,64L80,96C160,128,320,192,480,186.7C640,181,800,107,960,90.7C1120,75,1280,117,1360,138.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
         </svg>
       <SplitContainer className="small-container main-background m-0">
-        <Col className="d-flex justify-content-around px-0">
-        <div>
+        <Col className="d-flex justify-content-around px-0 py-4">
+        <div className="d-flex flex-column h-50 justify-content-around">
           <h5 className="text-white">VINIX</h5>
           <div>
             <FaFacebookF className="circle-icon"/>
@@ -380,6 +380,71 @@ const App = () => {
             <AiFillYoutube className="circle-icon"/>
           </div>
         </div>
+
+        
+          
+          <List className="text-white">
+            <ListSubheader>
+                <strong className="text-white">Company</strong> 
+            </ListSubheader>
+            <ListItem>
+              Product
+            </ListItem>
+            <ListItem>
+              Product
+            </ListItem>
+            <ListItem>
+              Product
+            </ListItem>
+          </List>
+
+          <List className="text-white">
+            <ListSubheader>
+                <strong className="text-white">Company</strong> 
+            </ListSubheader>
+            <ListItem>
+              Product
+            </ListItem>
+            <ListItem>
+              Product
+            </ListItem>
+            <ListItem>
+              Product
+            </ListItem>
+          </List>
+
+          <List className="text-white">
+            <ListSubheader>
+                <strong className="text-white">Company</strong> 
+            </ListSubheader>
+            <ListItem>
+              Product
+            </ListItem>
+            <ListItem>
+              Product
+            </ListItem>
+            <ListItem>
+              Product
+            </ListItem>
+          </List>
+
+          <List className="text-white">
+            <ListSubheader>
+                <strong className="text-white">Company</strong> 
+            </ListSubheader>
+            <ListItem>
+              Product
+            </ListItem>
+            <ListItem>
+              Product
+            </ListItem>
+            <ListItem>
+              Product
+            </ListItem>
+          </List>
+
+
+        
 
         </Col>
          
