@@ -22,10 +22,10 @@ import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube} from 'rea
 const App = () => {
   return (
     <div>
-      {/* <Header/> */}
+      <Header/>
       <div>
-        <SplitContainer className="cont gray-background m-0 px-0">
-         <Col className="d-md-block d-none" md={1}/>
+        <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-md-flex align-items-center">
+         <Col className="d-md-block d-none" md={1} lg={2}/>
          <Col className=" d-flex flex-column justify-content-center align-items-start" md={5} lg={3} >
       
          <h2> Build and Connect Vinix Blast App </h2>   
@@ -47,8 +47,8 @@ const App = () => {
             <Col className="d-flex justify-content-center" md={6}>
                 <img src={Image2} className="image2"/>
             </Col>
-            <Col md={4}>
-            <h3>Header Title</h3>
+            <Col md={6} lg={4}>
+            <h3>Vinix Blast Users</h3>
               Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
 
               Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
@@ -82,22 +82,22 @@ const App = () => {
          <Col md={3}>
         </Col>
       </SplitContainer>
-      <SplitContainer className="cont m-0">
+      <SplitContainer className="small-cont m-0">
         <Col id="waved">
-          <div className="w-100 h-100 d-flex justify-content-between flex-column align-items-center" >
+          <div className="w-100 pt-4 d-flex justify-content-between flex-column align-items-center" >
               <Col className="mt-5 pt-5  d-flex justify-content-around align-items-start" md={4} >
                   <GradientButton title="Windows" />
                   <GradientButton title="Linux" />
                   <GradientButton title="MacOS"/>
               </Col>
-              <Col className="d-flex justify-content-center align-items-center flex-column " md={6}>
+              <Col className="d-flex justify-content-center align-items-center flex-column py-4 " md={6}>
                 <h3>Pricing Plans </h3>
                 <p> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ex duis elit incididunt officia reprehenderit eu. Aliqua elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
           </div>
         </Col>
       </SplitContainer>
-      <SplitContainer className=" fixed-container">
+      <SplitContainer className=" fixed-container d-none">
         <Col className="d-flex justify-content-center">
           <div className="grid-container">
           {/* FIRST CARD */}

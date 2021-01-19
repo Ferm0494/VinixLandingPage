@@ -7,15 +7,14 @@ import GradientButton from '../GradientButton'
 
 
 const Header = ()=>{
-    const classes = useStyles();
     return(
-        <AppBar position="static" className="header position-absolute " color="transparent" style={{boxShadow:'none',width:'100%'}} >
-        <Toolbar>
+        <AppBar position="static" className="header position-absolute " color="transparent" style={{boxShadow:'none'}} >
+        <Toolbar className=" px-3">
          <Row className="w-100">
-         <Col md={1}>
+         <Col md={2} lg={1} className="d-flex align-items-center">
             <img src={Logo} className="logo" /> 
          </Col>        
-                <Col md={9} className="options">
+                <Col md={10} lg={9} className="options  d-flex align-items-center justify-content-around">
                
                  <Button className="options">Product</Button>
                
