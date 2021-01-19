@@ -29,7 +29,7 @@ const Header = ()=>{
 
                 <Button className="options">Blog</Button> 
           
-                <GradientButton title="Download Now"/> 
+                <GradientButton title="Download Now" className="gradient-button"/> 
                 
             </Col>
          </Row>

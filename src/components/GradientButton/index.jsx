@@ -4,7 +4,7 @@ import './button.scss'
 
 const Button = ({title,logo,className}) => {
     return (
-        <button type="button" className={className? `${className} gradient-button`: "gradient-button"} >
+        <button type="button" className={className? className : "gradient-button"} >
             {title}
         </button>
     );

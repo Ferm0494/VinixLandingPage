@@ -44,4 +44,27 @@ code {
 
 }
 
+.fer{
+ z-index: 1;
+ fill: url(#my-cool-gradient)
+ 
+}
+
+.main-background{
+  
+  background: rgb(175,45,140);
+  background: linear-gradient(80deg, rgba(175,45,140,1) 0%, rgba(175,45,140,1) 40%, rgba(81,119,183,1) 74%, rgba(81,119,183,1) 100%);
+
+}
+
+.circle-icon{
+  height: 2.5em;
+  width:2.5em;
+  padding:7px;
+  color:white;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+
 

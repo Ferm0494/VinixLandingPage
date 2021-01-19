@@ -13,6 +13,8 @@ import Image7 from './assets/7thImage.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {List,ListItem,ListItemIcon,ListItemText} from '@material-ui/core'
 import {CheckCircleOutline} from '@material-ui/icons'
+import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube} from 'react-icons/all'
+
 
 
 
@@ -23,21 +25,21 @@ const App = () => {
       <Header/>
       <div>
         <SplitContainer>
-          <Col xs={1} className="gray-background">
-          </Col>
-         <Col className="d-flex flex-column justify-content-center align-items-center gray-background ">
-         <h2>
+          <Col  className="gray-background bg-danger" sm={1}/>
+         
+         <Col className="d-flex flex-column justify-content-center align-items-center gray-background bg-primary " sm={6} >
+         {/* <h2>
                   Header title
          </h2>
                   Nisi sint ipsum laborum sunt nulla quis sit cupidatat voluptate. Id pariatur quis cupidatat duis amet pariatur do anim eiusmod ullamco culpa aute nulla proident. Adipisicing eiusmod labore deserunt adipisicing cupidatat ex. Occaecat duis id duis irure tempor magna qui sit fugiat exercitation minim eu laboris sunt.
 
                   Deserunt amet excepteur nostrud culpa eiusmod. Eiusmod ullamco reprehenderit non dolor sit est mollit ut aliquip enim laboris cillum labore. Ad eiusmod sit aliquip et cupidatat dolor labore amet aliquip occaecat. Laboris elit dolore aute qui elit id in enim anim esse est laborum non.
 
-                  Ullamco velit aliqua cupidatat est magna exercitation ea id. Est ipsum sint elit aliqua aliqua Lorem duis consectetur ad cupidatat sunt. Reprehenderit cupidatat dolor proident consequat eiusmod fugiat tempor ad veniam. Proident nostrud nulla commodo occaecat ullamco labore do consectetur proident laboris.    
+                  Ullamco velit aliqua cupidatat est magna exercitation ea id. Est ipsum sint elit aliqua aliqua Lorem duis consectetur ad cupidatat sunt. Reprehenderit cupidatat dolor proident consequat eiusmod fugiat tempor ad veniam. Proident nostrud nulla commodo occaecat ullamco labore do consectetur proident laboris.     */}
          </Col>
 
-         <Col className="d-flex flex-column justify-content-start gray-background align-items-end p-0 ">
-            <img src={Image1} className="image1"/>
+         <Col className="d-flex flex-column  justify-content-start gray-background align-items-end p-0 bg-warning mr-2 "  sm={5} >
+            {/* <img src={Image1} className="image1 img-fluid"/> */}
          </Col>
         </SplitContainer>
            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -139,7 +141,7 @@ const App = () => {
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded"/>
+              <GradientButton title="Title1" className="w-100 rounded gradient-button"/>
             </div>
             {/* SECOND CARD */}
             <div>
@@ -179,7 +181,7 @@ const App = () => {
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded"/>
+              <GradientButton title="Title1" className="w-100 rounded gradient-button"/>
             </div>
 
             {/* THIRD CARD */}
@@ -220,7 +222,7 @@ const App = () => {
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded"/>
+              <GradientButton title="Title1" className="w-100 rounded gradient-button"/>
             </div>
             {/* FOURTH CARD */}
             <div>
@@ -260,7 +262,7 @@ const App = () => {
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded"/>
+              <GradientButton title="Title1" className="w-100 rounded gradient-button"/>
             </div>
           </div>
         </Col>
@@ -337,18 +339,50 @@ const App = () => {
         <Col md={10} id="info-matrix" className="rounded d-flex p-4 ">
           <Col>
               <h5 className="text-white ">A part of the Matrix ecosystem</h5>
-              <p className="text-white">Consequat irure sunt incididunt aliqua Lorem. Labore velit ipsum nisi irure et sit sint consectetur ad dolor cillum est ipsum. Nostrud et mollit laborum nisi. Laborum ad laboris laboris in pariatur Lorem elit sint reprehenderit exercitation cupidatat. Ut laborum fugiat dolore veniam eiusmod.
-
-              Eiusmod eiusmod adipisicing magna irure quis. Aute id ea quis est sunt officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
+              <p className="text-white"> officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
 
               Par. Eiusmod cupidatat do officia eiusmod esse pariatur do pariatur pariatur.</p>
           </Col>
-          <Col >
-          Hello?
+          <Col className="d-flex justify-content-end align-items-end" >
+          <GradientButton className="gray-button" title="Matrix.org"/>
           </Col>
 
         </Col>
         <Col md={1}/>
+      </SplitContainer>
+      <SplitContainer className="small-container mt-4">
+          <Col md={4}/>
+          <Col className="d-flex flex-column align-items-center justify-content-center">
+            <h3>Ready to get Started? </h3>
+            <p className="px-5 py-4">Cupidatat exercitation qui dolor aliqua voluptate cillum voluptate pariatur.Occaecat pariatur aute ad aute eiusmod.  aute ad aute eiusmod</p>
+            <GradientButton title="Get Vinix Blast" className="gradient-button"/>
+
+          </Col>
+          <Col md={4}/>
+      </SplitContainer>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+        <linearGradient id="my-cool-gradient" x2="1" y2="1" gradientTransform="rotate(335)">
+            <stop offset="0%" stop-color="#af2d8c" />
+            <stop offset="40%" stop-color="#af2d8c" />
+            <stop offset="60%" stop-color="#5177b7" />
+            <stop offset="100%" stop-color="#5177b7" />
+        </linearGradient>
+        <path className="fer" fill-opacity="1" d="M0,64L80,96C160,128,320,192,480,186.7C640,181,800,107,960,90.7C1120,75,1280,117,1360,138.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+      <SplitContainer className="small-container main-background m-0">
+        <Col className="d-flex justify-content-around px-0">
+        <div>
+          <h5 className="text-white">VINIX</h5>
+          <div>
+            <FaFacebookF className="circle-icon"/>
+            <AiOutlineTwitter className="circle-icon"/>
+            <AiOutlineInstagram className="circle-icon"/>
+            <AiFillYoutube className="circle-icon"/>
+          </div>
+        </div>
+
+        </Col>
+         
       </SplitContainer>
     </div>
   );
