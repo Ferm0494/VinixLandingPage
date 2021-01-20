@@ -2,19 +2,19 @@ import React from 'react';
 import {AppBar,Toolbar,makeStyles,Button} from '@material-ui/core'
 import {Col,Row} from 'react-bootstrap'
 import './header.scss'
-import Logo from '../../assets/Logo1.png'
+import Logo from '../../assets/Logo1.svg'
 import GradientButton from '../GradientButton'
 
 
 const Header = ()=>{
     return(
-        <AppBar position="static" className="header position-absolute " color="transparent" style={{boxShadow:'none'}} >
-        <Toolbar className=" px-3">
+        <AppBar position="absolute" className="header position-absolute " color="transparent" style={{boxShadow:'none'}} >
+        <Toolbar className=" px-lg-3 px-md-0">
          <Row className="w-100">
          <Col md={2} lg={1} className="d-flex align-items-center">
             <img src={Logo} className="logo" /> 
          </Col>        
-                <Col md={10} lg={9} className="options  d-flex align-items-center justify-content-around">
+                <Col md={10} lg={9} className="options  d-flex align-items-center justify-content-around px-0">
                
                  <Button className="options">Product</Button>
                
@@ -28,7 +28,7 @@ const Header = ()=>{
 
                 <Button className="options">Blog</Button> 
           
-                <GradientButton title="Download Now" className="gradient-button"/> 
+                <GradientButton title="Download Now" className="gradient-button px-0 px-lg-4 "/> 
                 
             </Col>
          </Row>

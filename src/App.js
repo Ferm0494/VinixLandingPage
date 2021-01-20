@@ -4,12 +4,13 @@ import {SplitContainer} from './containers'
 import {IOS_URL,ANDROID_URL} from './utils/const'
 import {Col} from 'react-bootstrap'
 import Image1 from './assets/img-01.png'
-import Image2 from './assets/2ndImage.png'
-import Image3 from './assets/3rdImage.png'
-import Image4 from './assets/4thImage.png'
-import Image5 from './assets/5thImage.png'
-import Image6 from './assets/6thImage.png'
-import Image7 from './assets/7thImage.png'
+import Image2 from './assets/img-02.png'
+import Image3 from './assets/img-03.png'
+import Image4 from './assets/img-04.png'
+import Image5 from './assets/img-05.png'
+import Image6 from './assets/img-06.png'
+import Image7 from './assets/img-07.png'
+import Logo2 from './assets/Logo2.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {List,ListItem,ListItemIcon,ListItemText, ListSubheader} from '@material-ui/core'
 import {CheckCircleOutline} from '@material-ui/icons'
@@ -25,8 +26,8 @@ const App = () => {
       <Header/>
       <div>
         <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-md-flex align-items-center">
-         <Col className="d-md-block d-none" md={1} lg={2}/>
-         <Col className=" d-flex flex-column justify-content-center align-items-start" md={5} lg={3} >
+         <Col className="d-md-block d-none"  md={1} lg={2}/>
+         <Col className=" d-flex flex-column justify-content-center align-items-start" sm={8} md={5} lg={3} >
       
          <h2> Build and Connect Vinix Blast App </h2>   
           <p>In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
@@ -35,7 +36,7 @@ const App = () => {
                   
          </Col>
 
-         <Col className="d-flex justify-content-end px-0" md={6} lg={7} >
+         <Col className="d-flex justify-content-end px-0" sm={4} md={6} lg={7} >
             <img src={Image1} className="image1"/>
          </Col>
         </SplitContainer>
@@ -355,95 +356,96 @@ const App = () => {
           </Col>
           <Col lg={4} md={2}/>
       </SplitContainer>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
-        <linearGradient id="my-cool-gradient" x2="1" y2="1" gradientTransform="rotate(335)">
-            <stop offset="0%" stop-color="#af2d8c" />
-            <stop offset="40%" stop-color="#af2d8c" />
-            <stop offset="60%" stop-color="#5177b7" />
-            <stop offset="100%" stop-color="#5177b7" />
-        </linearGradient>
-        <path className="fer" fill-opacity="1" d="M0,64L80,96C160,128,320,192,480,186.7C640,181,800,107,960,90.7C1120,75,1280,117,1360,138.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-        </svg>
-      <SplitContainer className="small-container main-background m-0">
-        <Col className="d-flex justify-content-around px-0 py-4">
-        <div className="d-flex flex-column h-50 justify-content-around">
-          <h5 className="text-white">VINIX</h5>
-          <div>
-            <FaFacebookF className="circle-icon"/>
-            <AiOutlineTwitter className="circle-icon"/>
-            <AiOutlineInstagram className="circle-icon"/>
-            <AiFillYoutube className="circle-icon"/>
-          </div>
-        </div>
+      <footer>
+          <SplitContainer className="small-container h-100 d-flex flex-column justify-content-end">
+            <Col className="d-flex justify-content-around px-0 py-4 " >
+            <div className="d-flex flex-column h-50 justify-content-around align-self-center  ">
+            
+                <img src={Logo2} />
+                
 
-        
-          
-          <List className="text-white">
-            <ListSubheader>
-                <strong className="text-white">Company</strong> 
-            </ListSubheader>
-            <ListItem>
-              Product
-            </ListItem>
-            <ListItem>
-              Product
-            </ListItem>
-            <ListItem>
-              Product
-            </ListItem>
-          </List>
+              
+                
+              <div>
+                <FaFacebookF className="circle-icon"/>
+                <AiOutlineTwitter className="circle-icon"/>
+                <AiOutlineInstagram className="circle-icon"/>
+                <AiFillYoutube className="circle-icon"/>
+              </div>
+            </div>
 
-          <List className="text-white">
-            <ListSubheader>
-                <strong className="text-white">Company</strong> 
-            </ListSubheader>
-            <ListItem>
-              Product
-            </ListItem>
-            <ListItem>
-              Product
-            </ListItem>
-            <ListItem>
-              Product
-            </ListItem>
-          </List>
+            
+              
+              <List className="text-white">
+                <ListSubheader>
+                    <strong className="text-white">Company</strong> 
+                </ListSubheader>
+                <ListItem>
+                  Product
+                </ListItem>
+                <ListItem>
+                  Product
+                </ListItem>
+                <ListItem>
+                  Product
+                </ListItem>
+              </List>
 
-          <List className="text-white">
-            <ListSubheader>
-                <strong className="text-white">Company</strong> 
-            </ListSubheader>
-            <ListItem>
-              Product
-            </ListItem>
-            <ListItem>
-              Product
-            </ListItem>
-            <ListItem>
-              Product
-            </ListItem>
-          </List>
+              <List className="text-white">
+                <ListSubheader>
+                    <strong className="text-white">Company</strong> 
+                </ListSubheader>
+                <ListItem>
+                  Product
+                </ListItem>
+                <ListItem>
+                  Product
+                </ListItem>
+                <ListItem>
+                  Product
+                </ListItem>
+              </List>
 
-          <List className="text-white">
-            <ListSubheader>
-                <strong className="text-white">Company</strong> 
-            </ListSubheader>
-            <ListItem>
-              Product
-            </ListItem>
-            <ListItem>
-              Product
-            </ListItem>
-            <ListItem>
-              Product
-            </ListItem>
-          </List>
+              <List className="text-white">
+                <ListSubheader>
+                    <strong className="text-white">Company</strong> 
+                </ListSubheader>
+                <ListItem>
+                  Product
+                </ListItem>
+                <ListItem>
+                  Product
+                </ListItem>
+                <ListItem>
+                  Product
+                </ListItem>
+              </List>
+
+              <List className="text-white">
+                <ListSubheader>
+                    <strong className="text-white">Company</strong> 
+                </ListSubheader>
+                <ListItem>
+                  Product
+                </ListItem>
+                <ListItem>
+                  Product
+                </ListItem>
+                <ListItem>
+                  Product
+                </ListItem>
+              </List>
 
 
-        
+            
 
-        </Col>
-         
-      </SplitContainer>
+            </Col>
+
+            
+          </SplitContainer>
+
+      </footer>
+      
     </div>
   );
 }
