@@ -51,9 +51,12 @@ code {
  
 }
 .fixed-container{
-  height:40em;
+  height:35em;
 }
 
+.wrapper-container{
+  height:fit-content;
+}
 .small-container{
   height:15em;
 }
@@ -84,3 +87,16 @@ code {
   border-radius: 50%;
   border: 1px solid #fff;
 }
+
+
+@media (max-width: 991.98px) { 
+  .grid-container{
+    grid-template-columns: repeat(2,15em);
+    grid-template-rows: repeat(1,1fr);
+    grid-row-gap: 5em;
+  }
+
+  .fixed-container{
+    height: fit-content;
+  }
+ }
