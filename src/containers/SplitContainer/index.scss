@@ -29,9 +29,17 @@
 
    }
    @media (max-width: 767.98px) { 
-        .image1{
-            width:15em;
-            height:20em;
+     
+        #first-container{
+            background:url('../../assets/img-01.png') no-repeat rgba(224, 224, 227,0.5);
+            background-size: 70vw;
+            background-position:right top;
+           
+        }
+
+        .image2{
+            width:10em;
+            height:10em;
         }
 
 }

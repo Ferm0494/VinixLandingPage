@@ -23,11 +23,11 @@ import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube} from 'rea
 const App = () => {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <div>
-        <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-md-flex align-items-center">
-         <Col className="d-md-block d-none"  md={1} lg={2}/>
-         <Col className=" d-flex flex-column justify-content-center align-items-start" sm={8} md={5} lg={3} >
+        <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex align-items-end align-items-md-center" id="first-container">
+         <Col className="d-md-block d-none"  xs={1} lg={2}/>
+         <Col className=" d-flex flex-column justify-content-center align-items-start" xs={8} md={5} lg={3} >
       
          <h2> Build and Connect Vinix Blast App </h2>   
           <p>In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
@@ -36,7 +36,7 @@ const App = () => {
                   
          </Col>
 
-         <Col className="d-flex justify-content-end px-0" sm={4} md={6} lg={7} >
+         <Col className=" d-none d-md-flex  justify-content-end px-0"  md={6} lg={7} >
             <img src={Image1} className="image1"/>
          </Col>
         </SplitContainer>
@@ -98,7 +98,7 @@ const App = () => {
           </div>
         </Col>
       </SplitContainer>
-      <SplitContainer className=" fixed-container">
+      <SplitContainer className=" fixed-container d-none">
         <Col className="d-flex justify-content-center">
           <div className="grid-container">
           {/* FIRST CARD */}
