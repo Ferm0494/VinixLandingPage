@@ -1,7 +1,11 @@
 .cont{
-    height:35em;
+    height:45em;
     width:100%;
    
+}
+
+#first-container{
+    height:33em;
 }
 
 .image1{
@@ -28,18 +32,32 @@
     }
 
    }
-   @media (max-width: 767.98px) { 
+@media (max-width: 767.98px) { 
      
         #first-container{
             background:url('../../assets/img-01.png') no-repeat rgba(224, 224, 227,0.5);
             background-size: 70vw;
             background-position:right top;
+            height: 35em !important
            
         }
 
         .image2{
-            width:10em;
-            height:10em;
+            width:12em;
+            height:12em;
+        }
+
+        .cont{
+            height:fit-content;
+        }
+        #waved{
+            button{
+                padding:0.5em 1em ;
+            }
+            .buttons-container{
+                margin-top: 18vh !important;
+                
+            }
         }
 
 }

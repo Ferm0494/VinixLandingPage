@@ -14,7 +14,7 @@ import Logo2 from './assets/Logo2.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {List,ListItem,ListItemIcon,ListItemText, ListSubheader} from '@material-ui/core'
 import {CheckCircleOutline} from '@material-ui/icons'
-import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube} from 'react-icons/all'
+import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube,FaWindows,DiApple,FaLinux} from 'react-icons/all'
 
 
 
@@ -23,14 +23,16 @@ import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube} from 'rea
 const App = () => {
   return (
     <div>
-      {/* <Header/> */}
+      {
+        window.innerWidth > 767.98 ?<Header/> : null
+      }
       <div>
         <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex align-items-end align-items-md-center" id="first-container">
          <Col className="d-md-block d-none"  xs={1} lg={2}/>
-         <Col className=" d-flex flex-column justify-content-center align-items-start" xs={8} md={5} lg={3} >
+         <Col className=" d-flex flex-column justify-content-center align-items-md-start" xs={8} md={5} lg={3} >
       
          <h2> Build and Connect Vinix Blast App </h2>   
-          <p>In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
+          <p className="jumbo">In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
           <GradientButton   title="Get Vinix Blast" />
         
                   
@@ -50,11 +52,11 @@ const App = () => {
             </Col>
             <Col md={7} lg={4}>
             <h3>Vinix Blast Users</h3>
-              Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
 
-              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
+            Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
 
-              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.
+            Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
 
               <div className="d-flex w-100 buttons-container">
                
@@ -70,11 +72,11 @@ const App = () => {
          <Col lg={6} md={10}>
             <div>
                 <h3>Header Title</h3>
-                >Tempor elit exercitation laboris consectetur velit pariatur. Incididunt ea cillum veniam sint minim sint reprehenderit veniam in enim. Anim dolor fugiat quis fugiat eu amet quis proident aute nostrud. Minim eiusmod dolore qui enim tempor officia.
+                <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
 
-                Commodo tempor minim nulla officia qui eiusmod ut consectetur eu excepteur consequat. Velit ex voluptate tempor Lorem voluptate cupidatat non ex nostrud. Dolor magna excepteur fugiat commodo occaecat aliqua aute incididunt est proident labore ullamco incididunt labore.
+                Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
 
-                Proident culpa nostrud ex occaecat cillum enim. Et irure mollit Lorem culpa esse. Velit enim cupidatat Lorem proident et culpa officia magna culpa est duis laboris est. Cillum veniam Lorem duis duis. Incididunt qui duis minim eiusmod cupidatat.
+                Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               <div className="position-absolute mt-5">
                 <img src={Image3} className="w-100"/>
               </div> 
@@ -85,11 +87,11 @@ const App = () => {
       </SplitContainer>
       <SplitContainer className="small-cont m-0">
         <Col id="waved">
-          <div className="w-100 pt-4 d-flex justify-content-between flex-column align-items-center" >
-              <Col className="mt-5 pt-5  d-flex justify-content-around align-items-start" md={4} >
-                  <GradientButton title="Windows" />
-                  <GradientButton title="Linux" />
-                  <GradientButton title="MacOS"/>
+          <div className="w-100 pt-4 d-flex justify-content-between flex-column align-items-md-center" >
+              <Col className="mt-5 pt-5 d-flex justify-content-around align-items-start buttons-container" xs={12} md={4} >
+                  <GradientButton title="Windows" Logo={<FaWindows/>} />
+                  <GradientButton title="Linux" Logo={<FaLinux/>} />
+                  <GradientButton title="MacOS" Logo={<DiApple/>}/>
               </Col>
               <Col className="d-flex justify-content-center align-items-center flex-column py-4 " md={6}>
                 <h3 className="mt-5">Pricing Plans </h3>
@@ -98,7 +100,7 @@ const App = () => {
           </div>
         </Col>
       </SplitContainer>
-      <SplitContainer className=" fixed-container d-none">
+      <SplitContainer className=" fixed-container">
         <Col className="d-flex justify-content-center">
           <div className="grid-container">
           {/* FIRST CARD */}
@@ -109,28 +111,28 @@ const App = () => {
                 <h4>$0.00<span>/month</span></h4>
                 <hr/>
                 <List>
-                  <ListItem className="p-0">
+                  <ListItem >
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
@@ -149,28 +151,28 @@ const App = () => {
                 <h4>$0.00<span>/month</span></h4>
                 <hr/>
                 <List>
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
@@ -190,28 +192,28 @@ const App = () => {
                 <h4>$0.00<span>/month</span></h4>
                 <hr/>
                 <List>
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
@@ -230,28 +232,28 @@ const App = () => {
                 <h4>$0.00<span>/month</span></h4>
                 <hr/>
                 <List>
-                  <ListItem className="p-0">
+                  <ListItem >
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
-                  <ListItem className="p-0">
+                  <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
                       <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
@@ -266,7 +268,7 @@ const App = () => {
         </Col>
 
       </SplitContainer>
-      <SplitContainer className="small-container d-flex align-items-center my-4">
+      <SplitContainer className="small-container d-flex align-items-center my-md-4 my-2">
        
              <Col md={3}/>
               <Col className="d-flex  align-items-center flex-column " md={6}>
@@ -276,79 +278,82 @@ const App = () => {
               <Col md={3}/>
       </SplitContainer>
       <SplitContainer className="fixed-container py-lg-0 py-3">
-            <Col className="d-flex justify-content-center align-items-start align-items-md-center" lg={6} md={5}>
+            <Col className="d-flex justify-content-center align-items-start align-items-md-center " lg={6} md={5}>
                 <img src={Image4} className="image2"/>
             </Col>
             <Col lg={4} md={6}>
             <h3>Header Title</h3>
-              Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+             
+            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
 
-              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
+            Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
 
-              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.
+            Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
 
               </Col>
       </SplitContainer>
       <SplitContainer className="py-lg-0 py-3 fixed-container">
             <Col md={1}/>
-            <Col lg={4} md={6}>
+            <Col lg={4} md={6} className="order-md-0 order-1">
             <h3>Header Title</h3>
-              Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
 
               Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
 
-              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.
+              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
-              <Col className="d-flex justify-content-center align-items-start align-items-md-center" md={5}>
+              <Col className="d-flex justify-content-center align-items-start align-items-center order-0 order-md-1" md={5}>
                 <img src={Image5} className="image2"/>
             </Col>
       </SplitContainer>
       <SplitContainer className="py-lg-0 py-3 fixed-container">
             <Col lg={1}/>
-            <Col  md={6} lg={6} className="d-flex justify-content-start align-items-lg-start align-items-md-center">
+            <Col  md={6} lg={6} className="d-flex justify-content-md-start justify-content-center align-items-lg-start align-items-md-center">
                 <img src={Image6} className="image2"/>
             </Col>
             <Col md={5} lg={4}>
             <h3>Header Title</h3>
-              Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
-              unt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
-              illum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.
+            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+
+              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
+
+              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
 
               </Col>
       </SplitContainer>
       <SplitContainer className="fixed-container py-3 m-lg-0 mb-md-3">
             <Col md={1}/>
-            <Col lg={4} md={5}>
+            <Col lg={4} md={5} className="order-1 order-md-0">
             <h3>Header Title</h3>
-              Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
 
               Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
 
-              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.
+              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
-              <Col className="d-flex justify-content-end align-items-center" md={6}>
+              <Col className="d-flex justify-content-md-end justify-content-center align-items-center order-0 order-md-1" md={6}>
                 <img src={Image7} className="image2"/>
             </Col>
       </SplitContainer>
-      <SplitContainer className="wrapper-container">
-        <Col md={1}/>
-        <Col md={10} id="info-matrix" className="rounded d-flex p-4 flex-lg-row flex-md-column ">
-          <Col md={12} lg={6}>
-              <h5 className="text-white ">A part of the Matrix ecosystem</h5>
+      <SplitContainer className="fixed-container">
+        <Col xs={1}/>
+        <Col xs={10} id="info-matrix" className="rounded d-flex p-4 flex-lg-row flex-column ">
+          <Col xs={12}  lg={6}>
+              <h4 className="text-white ">A part of the Matrix ecosystem</h4>
               <p className="text-white"> officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
 
               Par. Eiusmod cupidatat do officia eiusmod esse pariatur do pariatur pariatur.</p>
           </Col>
-          <Col className="d-flex justify-content-end align-items-end" lg={6} >
+          <Col className="d-flex justify-content-md-end justify-content-start align-items-end " lg={6} >
           <GradientButton className="gray-button" title="Matrix.org"/>
           </Col>
 
         </Col>
-        <Col md={1}/>
+        <Col xs={1} md={1}/>
       </SplitContainer>
       <SplitContainer className="small-container mt-4">
           <Col lg={4} md={2}/>
-          <Col className="d-flex flex-column align-items-center justify-content-around  small-container ">
+          <Col className="d-md-flex flex-column align-items-center justify-content-around  small-container ">
             <h3>Ready to get Started?</h3>
             <p >Cupidatat exercitation qui dolor aliqua voluptate cillum voluptate pariatur.Occaecat pariatur aute ad aute eiusmod.  aute ad aute eiusmod</p>
             <GradientButton title="Get Vinix Blast" className="gradient-button"/>
@@ -357,9 +362,9 @@ const App = () => {
           <Col lg={4} md={2}/>
       </SplitContainer>
       <footer>
-          <SplitContainer className="small-container h-100 d-flex flex-column justify-content-end">
-            <Col className="d-flex justify-content-around px-0 py-4 " >
-            <div className="d-flex flex-column h-50 justify-content-around align-self-center  ">
+      <SplitContainer className="small-container h-100 d-md-flex flex-column justify-content-end ">
+            <Col className="d-md-flex justify-content-around px-0 py-4 grid-footer" >
+            <div className="d-flex flex-column h-50 justify-content-around align-self-center logo-cont ">
             
                 <img src={Logo2} />
                 
@@ -443,6 +448,7 @@ const App = () => {
 
             
           </SplitContainer>
+     
 
       </footer>
       

@@ -1,27 +1,25 @@
-@mixin main-button{
-    border: none;
-    padding: 7px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 200px;
-    cursor: pointer;
-    font-family: 'Mada-SemiBold'
-}
+// @mixin main-button{
+//     border: none;
+//     padding: 7px 40px;
+//     text-align: center;
+//     text-decoration: none;
+//     display: inline-block;
+//     border-radius: 200px !;
+//     cursor: pointer;
+//     font-family: 'Mada-SemiBold' !important
+// }
 
 
 .gradient-button{
     color: #ffff !important;
     background: rgb(175,45,140);
     background: linear-gradient(113deg, rgba(175,45,140,1) 40%, rgba(81,119,183,1) 74%);
-    @include main-button;
+   
 }
 
 .gray-button{
-    background-color: #F3F2F2;
+    background-color: #F3F2F2 !important;
     color: #1A1B30;
-    @include main-button;
-
 }
 
 
