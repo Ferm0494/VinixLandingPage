@@ -1,7 +1,7 @@
 import React from 'react';
 import {Header,AppleStoreButton,GoogleStoreButton, GradientButton} from './components'
 import {SplitContainer} from './containers'
-import {IOS_URL,ANDROID_URL} from './utils/const'
+import {IOS_URL,ANDROID_URL,location, FACEBOOK, TWITTER, INSTAGRAM, YOUTUBE, WINDOWS_INSTALLER, LINUX_INSTALLER, MAC_OS_INSTALLER} from './utils/const'
 import {Col} from 'react-bootstrap'
 import Image1 from './assets/img-01.png'
 import Image2 from './assets/img-02.png'
@@ -21,6 +21,7 @@ import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube,FaWindows,
 
 
 const App = () => {
+  
   return (
     <div>
       {
@@ -89,9 +90,9 @@ const App = () => {
         <Col id="waved">
           <div className="w-100 pt-4 d-flex justify-content-between flex-column align-items-md-center" >
               <Col className="mt-5 pt-5 d-flex justify-content-around align-items-start buttons-container" xs={12} md={4} >
-                  <GradientButton title="Windows" Logo={<FaWindows/>} />
-                  <GradientButton title="Linux" Logo={<FaLinux/>} />
-                  <GradientButton title="MacOS" Logo={<DiApple/>}/>
+                  <GradientButton title="Windows" Logo={<FaWindows/>} onClick={()=>window.open(WINDOWS_INSTALLER)} />
+                  <GradientButton title="Linux" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}/>
+                  <GradientButton title="MacOS" Logo={<DiApple/>} onClick={()=>window.open(MAC_OS_INSTALLER)} />
               </Col>
               <Col className="d-flex justify-content-center align-items-center flex-column py-4 " md={6}>
                 <h3 className="mt-5">Pricing Plans </h3>
@@ -372,10 +373,10 @@ const App = () => {
               
                 
               <div>
-                <FaFacebookF className="circle-icon"/>
-                <AiOutlineTwitter className="circle-icon"/>
-                <AiOutlineInstagram className="circle-icon"/>
-                <AiFillYoutube className="circle-icon"/>
+                <FaFacebookF className="circle-icon" onClick={()=>window.open(FACEBOOK)}/>
+                <AiOutlineTwitter className="circle-icon" onClick={()=>window.open(TWITTER)}/>
+                <AiOutlineInstagram className="circle-icon" onClick={()=>window.open(INSTAGRAM)}/>
+                <AiFillYoutube className="circle-icon" onClick={()=>window.open(YOUTUBE)}/>
               </div>
             </div>
 

@@ -27,16 +27,16 @@ const useStyles= makeStyles((theme)=>({
     }
 }))
 
-const Button = ({title,Logo,className}) => {
+const Button = ({title,Logo,className,onClick}) => {
     console.log("Logo?",Logo);
     const {root} = useStyles()
     return (
         
             Logo? (
-        <MUIButton startIcon={Logo} className={className? `${className} ${root}` : `gradient-button  ${root} `} >
+        <MUIButton onClick={onClick} startIcon={Logo} className={className? `${className} ${root}` : `gradient-button  ${root} `} >
              {title}
         </MUIButton>)
-        : (<MUIButton  className={className? `${className} ${root}` : `gradient-button  ${root} `} >
+        : (<MUIButton  onClick={onClick} className={className? `${className} ${root}` : `gradient-button  ${root} `} >
         {title}
         </MUIButton>)
         
