@@ -1,7 +1,7 @@
 import React from 'react';
 import {Header,AppleStoreButton,GoogleStoreButton, GradientButton} from './components'
 import {SplitContainer} from './containers'
-import {IOS_URL,ANDROID_URL,location, FACEBOOK, TWITTER, INSTAGRAM, YOUTUBE, WINDOWS_INSTALLER, LINUX_INSTALLER, MAC_OS_INSTALLER} from './utils/const'
+import {IOS_URL,ANDROID_URL,location, FACEBOOK, TWITTER, INSTAGRAM, YOUTUBE, WINDOWS_INSTALLER, LINUX_INSTALLER, MAC_OS_INSTALLER, MATRIX_URL} from './utils/const'
 import {Col} from 'react-bootstrap'
 import Image1 from './assets/img-01.png'
 import Image2 from './assets/img-02.png'
@@ -346,7 +346,7 @@ const App = () => {
               Par. Eiusmod cupidatat do officia eiusmod esse pariatur do pariatur pariatur.</p>
           </Col>
           <Col className="d-flex justify-content-md-end justify-content-start align-items-end " lg={6} >
-          <GradientButton className="gray-button" title="Matrix.org"/>
+          <GradientButton className="gray-button" title="Matrix.org" onClick={()=> window.open(MATRIX_URL) }/>
           </Col>
 
         </Col>

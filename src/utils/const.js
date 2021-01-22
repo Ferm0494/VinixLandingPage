@@ -7,4 +7,5 @@ export const YOUTUBE = 'https://www.youtube.com/channel/UC5zAbybnSjJKGX1wCl9KXIQ
 export const WINDOWS_INSTALLER = 'https://packages.vinix.im/desktop/installers/Blast Setup 1.7.7.exe'
 export const LINUX_INSTALLER = 'https://packages.vinix.im/desktop/installers/blast_1.7.6_amd64.deb'
 export const MAC_OS_INSTALLER = 'https://packages.vinix.im/desktop/installers/Blast-1.7.6.dmg'
+export const MATRIX_URL = 'https://matrix.org/'
 export const {location} = window
