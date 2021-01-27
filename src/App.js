@@ -285,64 +285,39 @@ const App = () => {
               </Col>
               <Col/>
       </SplitContainer>
-      <SplitContainer className="fixed-container py-lg-0 py-3">
-            <Col className="d-flex justify-content-center align-items-start align-items-md-center " lg={6} md={5}>
-                <img src={Image4} className="image2 justify-self-center"/>
-            </Col>
-            <Col lg={4} md={6}>
-            <h4>Team Chat</h4>
-             
-            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
+     <div id="grid-features" className="fixed-container container mb-md-5">
+        <img src={Image4} className="image2" />
+        <div className="align-self-center">
+        
+          <h4>Team Chat</h4>
+          <p>Exercitation labore cupidatat et irure mollit nostrud aliquip anim laborum proident deserunt incididunt incididunt tempor. Veniam qui nulla nulla ex anim. Ullamco labore fugiat ex elit quis sit cupidatat deserunt proident exercitation exercitation veniam. Duis Lorem exercitation exercitation ullamco laboris officia ullamco. Cupidatat consectetur ad fugiat officia consequat irure esse ea irure ut sit ad. </p>
+         
+        </div>
+        <div className="align-self-center">
+        
+          <h4>Text Messaging</h4>
+          <p>Exercitation labore cupidatat et irure mollit nostrud aliquip anim laborum proident deserunt incididunt incididunt tempor. Veniam qui nulla nulla ex anim. Ullamco labore fugiat ex elit quis sit cupidatat deserunt proident exercitation exercitation veniam. Duis Lorem exercitation exercitation ullamco laboris officia ullamco. Cupidatat consectetur ad fugiat officia consequat irure esse ea irure ut sit ad. </p>
+         
+        </div>
+        <img src={Image5} className="image2"/>
+        <img src={Image6} className="image2" />
+        <div className="align-self-center">
+        
+          <h4>Voice Video Calls</h4>
+          <p>Exercitation labore cupidatat et irure mollit nostrud aliquip anim laborum proident deserunt incididunt incididunt tempor. Veniam qui nulla nulla ex anim. Ullamco labore fugiat ex elit quis sit cupidatat deserunt proident exercitation exercitation veniam. Duis Lorem exercitation exercitation ullamco laboris officia ullamco. Cupidatat consectetur ad fugiat officia consequat irure esse ea irure ut sit ad. </p>
+         
+        </div>
 
-            Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
-
-            Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
-
-              </Col>
-      </SplitContainer>
-      <SplitContainer className="py-lg-0 py-3 fixed-container">
-            <Col md={1}/>
-            <Col lg={4} md={6} className="order-md-0 order-1">
-            <h3>Header Title</h3>
-            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
-
-              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
-
-              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
-              </Col>
-              <Col className="d-flex justify-content-center align-items-start align-items-center order-0 order-md-1" md={5}>
-                <img src={Image5} className="image2"/>
-            </Col>
-      </SplitContainer>
-      <SplitContainer className="py-lg-0 py-3 fixed-container">
-            <Col lg={1}/>
-            <Col  md={6} lg={6} className="d-flex justify-content-md-start justify-content-center align-items-lg-start align-items-md-center">
-                <img src={Image6} className="image2"/>
-            </Col>
-            <Col md={5} lg={4}>
-            <h3>Header Title</h3>
-            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
-
-              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
-
-              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
-
-              </Col>
-      </SplitContainer>
-      <SplitContainer className="fixed-container py-3 m-lg-0 mb-md-3">
-            <Col md={1}/>
-            <Col lg={4} md={5} className="order-1 order-md-0">
-            <h3>Header Title</h3>
-            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
-
-              Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
-
-              Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
-              </Col>
-              <Col className="d-flex justify-content-md-end justify-content-center align-items-center order-0 order-md-1" md={6}>
-                <img src={Image7} className="image2"/>
-            </Col>
-      </SplitContainer>
+        <div className="align-self-center">
+        
+          <h4>Text Messaging</h4>
+          <p>Exercitation labore cupidatat et irure mollit nostrud aliquip anim laborum proident deserunt incididunt incididunt tempor. Veniam qui nulla nulla ex anim. Ullamco labore fugiat ex elit quis sit cupidatat deserunt proident exercitation exercitation veniam. Duis Lorem exercitation exercitation ullamco laboris officia ullamco. Cupidatat consectetur ad fugiat officia consequat irure esse ea irure ut sit ad. </p>
+         
+        </div>
+        <img src={Image7} className="image2 mx-auto"/>
+     </div>
+   
+     
       <SplitContainer className="fixed-container">
         <Col xs={1}/>
         <Col xs={10} id="info-matrix" className="rounded d-flex p-4 flex-lg-row flex-column ">
@@ -376,10 +351,7 @@ const App = () => {
             <div className="d-flex flex-column h-50 justify-content-around align-self-center logo-cont ">
             
                 <img src={Logo2} />
-                
-
-              
-                
+               
               <div>
                 <FaFacebookF className="circle-icon" onClick={()=>window.open(FACEBOOK)}/>
                 <AiOutlineTwitter className="circle-icon" onClick={()=>window.open(TWITTER)}/>
