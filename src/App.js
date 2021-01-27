@@ -72,7 +72,7 @@ const App = () => {
                 <p> runt commodo consectetur ad idillum velit.
                 Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
             <div>
-                <img src={Image3} className="position-relative image-2"/>
+                <img src={Image3} className="position-absolute image-2"/>
               </div> 
             </div>
          </Col> 
