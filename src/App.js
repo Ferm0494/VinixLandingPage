@@ -94,15 +94,19 @@ const App = () => {
           </div>
         </Col>
       </SplitContainer>
-      <SplitContainer className=" fixed-container">
+      <SplitContainer className=" fixed-container mt-md-4">
         <Col className="d-flex justify-content-center">
           <div className="grid-container">
           {/* FIRST CARD */}
           <div>
             <div className="p-2 pricing-card card shadow-sm border-bottom-0">
+              <div className="d-flex flex-column justify-content-around align-items-center">
                 <h5>Free</h5>
                 <p>Small text...</p>
-                <h4>$0.00<span>/month</span></h4>
+                <h5>$0.00<span className="month">/month</span></h5>
+
+              </div>
+                
                 <hr/>
                 <List>
                   <ListItem >
@@ -140,9 +144,13 @@ const App = () => {
             {/* SECOND CARD */}
             <div>
             <div className="p-2 pricing-card card shadow-sm border-bottom-0">
-                <h5>Free</h5>
-                <p>Small text...</p>
-                <h4>$0.00<span>/month</span></h4>
+             
+                <div className="d-flex flex-column justify-content-around align-items-center">
+                  <h5>Free</h5>
+                  <p>Small text...</p>
+                  <h5>$0.00<span className="month">/month</span></h5>
+
+                </div>
                 <hr/>
                 <List>
                   <ListItem>
@@ -181,9 +189,12 @@ const App = () => {
             {/* THIRD CARD */}
             <div>
             <div className="p-2 pricing-card card shadow-sm border-bottom-0">
-                <h5>Free</h5>
-                <p>Small text...</p>
-                <h4>$0.00<span>/month</span></h4>
+            <div className="d-flex flex-column justify-content-around align-items-center">
+                  <h5>Free</h5>
+                  <p>Small text...</p>
+                  <h5>$0.00<span className="month">/month</span></h5>
+
+                </div>
                 <hr/>
                 <List>
                   <ListItem>
@@ -221,9 +232,12 @@ const App = () => {
             {/* FOURTH CARD */}
             <div>
             <div className="p-2 pricing-card card shadow-sm border-bottom-0">
-                <h5>Free</h5>
-                <p>Small text...</p>
-                <h4>$0.00<span>/month</span></h4>
+                 <div className="d-flex flex-column justify-content-around align-items-center">
+                    <h5>Free</h5>
+                    <p>Small text...</p>
+                    <h5>$0.00<span className="month">/month</span></h5>
+
+                </div>
                 <hr/>
                 <List>
                   <ListItem >
@@ -264,12 +278,12 @@ const App = () => {
       </SplitContainer>
       <SplitContainer className="small-container my-md-4 my-2  d-flex flex-column justify-content-center  ">
        
-             <Col md={4} />
-              <Col className="d-flex flex-column   " md={5}>
+             <Col  />
+              <Col>
                 <h3 className="text-center">Vinix Features </h3>
                 <p className="text-center"> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ea. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
-              <Col md={3} />
+              <Col/>
       </SplitContainer>
       <SplitContainer className="fixed-container py-lg-0 py-3">
             <Col className="d-flex justify-content-center align-items-start align-items-md-center " lg={6} md={5}>

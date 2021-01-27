@@ -17,6 +17,11 @@
   font-family: "Poppins";
   src: url('./assets/fonts/Poppins-Regular.ttf')
 }
+
+@font-face{
+  font-family: 'Mada-Normal';
+  src: url('./assets/fonts/Mada-Medium.ttf')
+}
 p{
   font-family: "Poppins" !important;
   color: gray;
@@ -39,6 +44,10 @@ h3{
 
 h4{
   font-size: 2em !important;
+}
+
+h5{
+  font-size: 1.8em !important;
 }
 
 body {
@@ -72,11 +81,15 @@ footer{
   font-weight: 700
 }
 
-#waved{
+.month{
+  font-family: 'Mada-Normal';
+  font-size: 0.5em;
+}
 
+#waved{
   background: url('./assets/WaveBackground.png');
   background-size: cover;
-  background-position: 0% -1.5%;
+  
 
 }
 
