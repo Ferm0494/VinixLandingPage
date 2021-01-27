@@ -1,17 +1,10 @@
-// @mixin main-button{
-//     border: none;
-//     padding: 7px 40px;
-//     text-align: center;
-//     text-decoration: none;
-//     display: inline-block;
-//     border-radius: 200px !;
-//     cursor: pointer;
-//     font-family: 'Mada-SemiBold' !important
-// }
+@mixin main-button{
+ color: #ffff !important
+}
 
 
 .gradient-button{
-    color: #ffff !important;
+    @include main-button;
     background: rgb(175,45,140);
     background: linear-gradient(113deg, rgba(175,45,140,1) 40%, rgba(81,119,183,1) 74%);
    
@@ -21,5 +14,19 @@
     background-color: #F3F2F2 !important;
     color: #1A1B30;
 }
+
+
+.gradient-button-curved{
+    @include main-button;
+    background:url('../../assets/gradient-button.png');
+    background-size: cover;
+    background-color: transparent !important;
+    &:hover{
+        background-color: transparent !important;
+    }
+  
+  
+}
+
 
 

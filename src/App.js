@@ -43,21 +43,17 @@ const App = () => {
             <img src={Image1} className="image1"/>
          </Col>
         </SplitContainer>
-           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="#E0E0E3" fill-opacity="0.5" d="M0,192L48,208C96,224,192,256,288,229.3C384,203,480,117,576,112C672,107,768,181,864,181.3C960,181,1056,107,1152,101.3C1248,96,1344,160,1392,192L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-           </svg>     
+            
       </div>
-      <SplitContainer>
+      <SplitContainer className="cont d-flex flex-column justify-content-center">
             <Col className="d-flex justify-content-center" md={5} lg={6}>
                 <img src={Image2} className="image2"/>
             </Col>
-            <Col md={7} lg={4}>
+            <Col md={7} lg={3}>
             <h3>Vinix Blast Users</h3>
-            <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
-
-            Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
-
-            Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
+            <p className="fw-bold">Ea nisi fugiat nostrud duis ss sdsdf tetur labore eiusmod amet et qui veniam cillum ullamc sdfsdf sdfsdo.</p> 
+            <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+            Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
 
               <div className="d-flex w-100 buttons-container">
                
@@ -67,19 +63,16 @@ const App = () => {
               </div>
               </Col>
       </SplitContainer>
-      <SplitContainer className="cont m-0 px-0 mt-4 mt-lg-0 ">
+      <SplitContainer className="medium-container m-0 px-0 mt-4 mt-lg-0">
         <Col md={1} lg={3}>
         </Col>
          <Col lg={6} md={10}>
             <div>
-                <h3>Header Title</h3>
-                <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
-
-                Occaecat qui sint ullamco quis duis cillum aute id consequat id. Pariatur sunt excepteur irure ex est aliqua laborum ullamco id minim ad enim incididunt laboris. Nisi labore aliquip cillum deserunt cillum exercitation non culpa laboris pariatur amet esse ex voluptate. Eu est dolor est deserunt commodo consectetur ad id ipsum. Velit non laborum nisi cupidatat do amet culpa consequat cupidatat fugiat. Non officia ad aliquip eiusmod exercitation nostrud cillum velit.
-
+                <h3 className="text-center">Header Title</h3>
+                <p> runt commodo consectetur ad idillum velit.
                 Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
-              <div className="position-absolute mt-5">
-                <img src={Image3} className="w-100"/>
+            <div>
+                <img src={Image3} className="position-relative image-2"/>
               </div> 
             </div>
          </Col> 
@@ -142,7 +135,7 @@ const App = () => {
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded gradient-button"/>
+              <GradientButton title="Title1" className="w-100 rounded gradient-button-curved"/>
             </div>
             {/* SECOND CARD */}
             <div>
@@ -182,7 +175,7 @@ const App = () => {
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded gradient-button"/>
+              <GradientButton title="Title1" className="w-100 rounded gradient-button-curved"/>
             </div>
 
             {/* THIRD CARD */}
@@ -223,7 +216,7 @@ const App = () => {
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded gradient-button"/>
+              <GradientButton title="Title1" className="w-100 rounded gradient-button-curved"/>
             </div>
             {/* FOURTH CARD */}
             <div>
@@ -263,27 +256,27 @@ const App = () => {
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded gradient-button"/>
+              <GradientButton title="Title1" className="w-100 rounded gradient-button-curved"/>
             </div>
           </div>
         </Col>
 
       </SplitContainer>
-      <SplitContainer className="small-container d-flex align-items-center my-md-4 my-2">
+      <SplitContainer className="small-container my-md-4 my-2  d-flex flex-column justify-content-center  ">
        
-             <Col md={3}/>
-              <Col className="d-flex  align-items-center flex-column " md={6}>
-                <h3>Vinix Features </h3>
-                <p> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ex duis elit incididunt officia reprehenderit eu. Aliqua elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
+             <Col md={4} />
+              <Col className="d-flex flex-column   " md={5}>
+                <h3 className="text-center">Vinix Features </h3>
+                <p className="text-center"> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ea. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
-              <Col md={3}/>
+              <Col md={3} />
       </SplitContainer>
       <SplitContainer className="fixed-container py-lg-0 py-3">
             <Col className="d-flex justify-content-center align-items-start align-items-md-center " lg={6} md={5}>
-                <img src={Image4} className="image2"/>
+                <img src={Image4} className="image2 justify-self-center"/>
             </Col>
             <Col lg={4} md={6}>
-            <h3>Header Title</h3>
+            <h4>Team Chat</h4>
              
             <p>  Amet voluptate veniam aliquip pariatur qui amet. Pariatur consectetur minim laboris elit sunt aute elit qui exercitation. Consequat qui pariatur nostrud ut adipisicing minim proident voluptate enim minim ut cillum non. Sint duis anim nostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt.
 
@@ -345,7 +338,8 @@ const App = () => {
 
               Par. Eiusmod cupidatat do officia eiusmod esse pariatur do pariatur pariatur.</p>
           </Col>
-          <Col className="d-flex justify-content-md-end justify-content-start align-items-end " lg={6} >
+          <Col className="d-flex justify-content-md-end justify-content-start align-items-end  " lg={6} >
+          <img src={"https://matrix.org/images/matrix-logo-white.svg"} className="mr-3 pr-2 mb-2" />
           <GradientButton className="gray-button" title="Matrix.org" onClick={()=> window.open(MATRIX_URL) }/>
           </Col>
 
