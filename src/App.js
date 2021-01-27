@@ -28,11 +28,11 @@ const App = () => {
         window.innerWidth > 767.98 ?<Header/> : null
       }
       <div>
-        <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex align-items-end align-items-md-center" id="first-container">
+        <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex  align-items-start" id="first-container">
          <Col className="d-md-block d-none"  xs={1} lg={2}/>
          <Col className=" d-flex flex-column justify-content-center align-items-md-start" xs={8} md={5} lg={3} >
       
-         <h2> Build and Connect Vinix Blast App </h2>   
+          <h2> Build and Connect Vinix Blast App </h2>   
           <p className="jumbo">In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
           <GradientButton   title="Get Vinix Blast" />
         
@@ -87,9 +87,9 @@ const App = () => {
                   <GradientButton title="Linux" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}/>
                   <GradientButton title="MacOS" Logo={<DiApple/>} onClick={()=>window.open(MAC_OS_INSTALLER)} />
               </Col>
-              <Col className="d-flex justify-content-center align-items-center flex-column py-4 " md={6}>
+              <Col className="d-flex justify-content-center align-items-center flex-column py-4 " md={8} lg={6}>
                 <h3 className="mt-5">Pricing Plans </h3>
-                <p> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ex duis elit incididunt officia reprehenderit eu. Aliqua elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
+                <p> Ad ex ad da elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
           </div>
         </Col>
@@ -279,9 +279,9 @@ const App = () => {
       <SplitContainer className="small-container my-md-4 my-2  d-flex flex-column justify-content-center  ">
        
              <Col  />
-              <Col>
+              <Col md={8} lg={4}>
                 <h3 className="text-center">Vinix Features </h3>
-                <p className="text-center"> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ea. In excepteur in nisi deserunt irure amet consectetur id.</p>
+                <p className="text-lg-center"> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ea. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
               <Col/>
       </SplitContainer>
@@ -318,9 +318,9 @@ const App = () => {
      </div>
    
      
-      <SplitContainer className="fixed-container">
-        <Col xs={1}/>
-        <Col xs={10} id="info-matrix" className="rounded d-flex p-4 flex-lg-row flex-column ">
+      <SplitContainer className="fixed-container container">
+        
+        <Col xs={12} id="info-matrix" className="rounded d-flex p-4 flex-lg-row flex-column ">
           <Col xs={12}  lg={6}>
               <h4 className="text-white ">A part of the Matrix ecosystem</h4>
               <p className="text-white"> officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
@@ -333,9 +333,9 @@ const App = () => {
           </Col>
 
         </Col>
-        <Col xs={1} md={1}/>
+      
       </SplitContainer>
-      <SplitContainer className="small-container mt-4">
+      <SplitContainer className="medium-container mt-4 d-flex flex-column justify-content-center ali">
           <Col lg={4} md={2}/>
           <Col className="d-md-flex flex-column align-items-center justify-content-around  small-container ">
             <h3>Ready to get Started?</h3>

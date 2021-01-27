@@ -4,9 +4,6 @@
    
 }
 
-#first-container{
-    height:33em;
-}
 
 .image1{
     width:33em;
@@ -20,13 +17,16 @@
 
 @media (max-width: 991.98px) { 
     .image1{
-      width: 25em;
-      height: 38em;
+        
+      height:33rem;
+     
     }
 
     .image2{
-        width:25em;
+        width:20em;
     }
+
+
 
    }
 @media (max-width: 767.98px) { 
