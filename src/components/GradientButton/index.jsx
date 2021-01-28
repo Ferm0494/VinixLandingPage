@@ -4,8 +4,9 @@ import './button.scss'
 
 
 
-const useStyles=({font,weight})=>makeStyles((theme)=>({
+const useStyles=({font,weight,width})=>makeStyles((theme)=>({
     root:{
+        width: width ? width :theme.width,
         fontWeight: weight? weight : "normal",
         borderRadius:'200px',
         fontFamily: font? font : 'Mada-SemiBold',
@@ -28,12 +29,16 @@ const useStyles=({font,weight})=>makeStyles((theme)=>({
     }
 }))
 
-const Button = ({title,Logo,className,onClick,font,weight}) => {
+const Button = ({title,Logo,className,onClick,font,weight,width,right}) => {
     console.log("Logo?",Logo);
-    const {root} = useStyles({font,weight})();
+    const {root} = useStyles({font,weight,width})();
     return (
         
             Logo? (
+                right ? <MUIButton onClick={onClick} endIcon={Logo} className={className? `${className} ${root}` : `gradient-button  ${root} `} >
+                {title}
+           </MUIButton> 
+                :
         <MUIButton onClick={onClick} startIcon={Logo} className={className? `${className} ${root}` : `gradient-button  ${root} `} >
              {title}
         </MUIButton>)

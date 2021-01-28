@@ -14,7 +14,7 @@ import Logo2 from './assets/Logo2.svg'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {List,ListItem,ListItemIcon,ListItemText, ListSubheader} from '@material-ui/core'
 import {CheckCircleOutline} from '@material-ui/icons'
-import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube,FaWindows,DiApple,FaLinux} from 'react-icons/all'
+import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube,FaWindows,DiApple,FaLinux,BsArrowUpRight} from 'react-icons/all'
 
 
 
@@ -69,10 +69,10 @@ const App = () => {
               </div>
              
       </div>
-      <SplitContainer className="medium-container mt-6  ">
+      <SplitContainer className="medium-container  mt-7 pt-3 ">
         <Col md={1} lg={2}>
         </Col>
-         <Col lg={8} md={10}>
+         <Col lg={8} md={10} >
          <Row>
           <Col lg={2}/>
           <Col lg={8}>
@@ -82,26 +82,24 @@ const App = () => {
               
             </Col>
             <Col lg={2}/>
-            <Col>
-              <img src={Image3} className="position-absolute image2  w-100"/>
-            </Col>
-
-         </Row>
+        </Row>
            
          </Col>
              
-         <Col  md={1} lg={2}>
-        </Col>
+         <Col  md={1} lg={2}/>
+         <img src={Image3} className="position-relative mx-auto mw-100"/>
+       
       </SplitContainer>
       <SplitContainer className="small-cont m-0">
         <Col id="waved">
-          <div className="w-100 pt-4 d-flex justify-content-between flex-column align-items-md-center" >
-              <Col className="pt-5 d-flex justify-content-around align-items-start buttons-container" xs={12} md={4} >
-                  <GradientButton title="Windows" Logo={<FaWindows/>} onClick={()=>window.open(WINDOWS_INSTALLER)} />
-                  <GradientButton title="Linux" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}/>
-                  <GradientButton title="MacOS" Logo={<DiApple/>} onClick={()=>window.open(MAC_OS_INSTALLER)} />
-              </Col>
-              <Col className="d-flex justify-content-center align-items-center flex-column pb-1 pt-5  mt-5 " md={8} lg={4}>
+          <div className="medium-container w-100 pt-4 d-flex justify-content-between flex-column align-items-md-center" >
+              <div className=" h-50 d-flex w-100 justify-content-center align-items-center mt-5">
+                  <GradientButton title="Mac OS" Logo={<DiApple/>} onClick={()=>window.open(MAC_OS_INSTALLER)} font='Mada-Semi' weight="Bold" width="220px" />
+                  <GradientButton title="Windows (64 bit)" Logo={<FaWindows/>} onClick={()=>window.open(WINDOWS_INSTALLER)}  font='Mada-Semi' weight="Bold" className=" gradient-button px-4 ml-3"  />
+                  <GradientButton title="Linux (64 bit)" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}  font='Mada-Semi' weight="Bold" width="220px"  className=" gradient-button px-4 ml-3"/>
+                 
+              </div>
+              <Col className="  d-flex justify-content-center align-items-center flex-column  " md={8} lg={4}>
                 <h3 className="mt-5">Pricing Plans </h3>
                 <p className="text-center"> Ad ex ad da elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
@@ -304,7 +302,7 @@ const App = () => {
         </Col>
 
       </SplitContainer>
-      <SplitContainer className="small-container my-md-4 my-2  d-flex flex-column justify-content-end  ">
+      <SplitContainer className="small-container mt-md-4 mb-md-5 my-2  d-flex flex-column justify-content-end  ">
        
              <Col  />
               <Col md={8} lg={4}>
@@ -315,49 +313,73 @@ const App = () => {
       </SplitContainer>
      <div  className="grid-features fixed-container container mb-md-5">
         <img src={Image4} className="image2" />
-        <div className="align-self-center">
+        <div className=" align-self-center">
         
           <h4>Team Chat</h4>
-          <p>Exercitation labore cupidatat et irure mollit nostrud aliquip anim laborum proident deserunt incididunt incididunt tempor. Veniam qui nulla nulla ex anim. Ullamco labore fugiat ex elit quis sit cupidatat deserunt proident exercitation exercitation veniam. Duis Lorem exercitation exercitation ullamco laboris officia ullamco. Cupidatat consectetur ad fugiat officia consequat irure esse ea irure ut sit ad. </p>
-         
+          <Row className="px-0">
+              <Col lg={9}>
+                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+                    Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
+              </Col>
+              
+          </Row>         
         </div>
         <div className="align-self-center">
         
           <h4>Text Messaging</h4>
-          <p>Exercitation labore cupidatat et irure mollit nostrud aliquip anim laborum proident deserunt incididunt incididunt tempor. Veniam qui nulla nulla ex anim. Ullamco labore fugiat ex elit quis sit cupidatat deserunt proident exercitation exercitation veniam. Duis Lorem exercitation exercitation ullamco laboris officia ullamco. Cupidatat consectetur ad fugiat officia consequat irure esse ea irure ut sit ad. </p>
-         
+          <Row className="px-0">
+              <Col lg={9}>
+                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+                    Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
+              </Col>
+              
+          </Row>          
         </div>
         <img src={Image5} className="image2"/>
         <img src={Image6} className="image2" />
         <div className="align-self-center">
         
           <h4>Voice Video Calls</h4>
-          <p>Exercitation labore cupidatat et irure mollit nostrud aliquip anim laborum proident deserunt incididunt incididunt tempor. Veniam qui nulla nulla ex anim. Ullamco labore fugiat ex elit quis sit cupidatat deserunt proident exercitation exercitation veniam. Duis Lorem exercitation exercitation ullamco laboris officia ullamco. Cupidatat consectetur ad fugiat officia consequat irure esse ea irure ut sit ad. </p>
-         
+          <Row className="px-0">
+              <Col lg={9}>
+                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+                    Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
+              </Col>
+              
+          </Row>          
         </div>
 
         <div className="align-self-center">
         
           <h4>Text Messaging</h4>
-          <p>Exercitation labore cupidatat et irure mollit nostrud aliquip anim laborum proident deserunt incididunt incididunt tempor. Veniam qui nulla nulla ex anim. Ullamco labore fugiat ex elit quis sit cupidatat deserunt proident exercitation exercitation veniam. Duis Lorem exercitation exercitation ullamco laboris officia ullamco. Cupidatat consectetur ad fugiat officia consequat irure esse ea irure ut sit ad. </p>
-         
+          <Row className="px-0">
+              <Col lg={9}>
+                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+                    Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
+              </Col>
+              
+        </Row>          
         </div>
         <img src={Image7} className="image2 mx-auto"/>
      </div>
    
      
-      <SplitContainer className="fixed-container container">
+      <SplitContainer className="container  mt-7 ">
         
-        <Col xs={12} id="info-matrix" className="rounded d-flex p-4 flex-lg-row flex-column ">
+        <Col xs={12}  id="info-matrix" className=" d-flex p-4 flex-lg-row flex-column ">
+       
+
           <Col xs={12}  lg={6}>
               <h4 className="text-white ">A part of the Matrix ecosystem</h4>
-              <p className="text-white"> officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
+              <Col lg={10} className="px-0">
+                    <p className="text-white"> officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
 
-              Par. Eiusmod cupidatat do officia eiusmod esse pariatur do pariatur pariatur.</p>
+      Par. Eiusmod cupidatat do officia eiusmod esse pariatur do pariatur pariatur.</p>
+              </Col>
           </Col>
-          <Col className="d-flex justify-content-md-end justify-content-start align-items-end  " lg={6} >
+          <Col className="d-flex justify-content-md-end justify-content-start align-items-end " lg={6} >
           <img src={"https://matrix.org/images/matrix-logo-white.svg"} className="mr-3 pr-2 mb-2" />
-          <GradientButton className="gray-button" title="Matrix.org" onClick={()=> window.open(MATRIX_URL) }/>
+          <GradientButton Logo={<BsArrowUpRight/>} className="gray-button" title="Matrix.org" onClick={()=> window.open(MATRIX_URL) } right={true} />
           </Col>
 
         </Col>
@@ -374,7 +396,7 @@ const App = () => {
           <Col lg={4} md={2}/>
       </SplitContainer>
       <footer>
-      <SplitContainer className="small-container h-100 d-md-flex flex-column justify-content-end ">
+      <SplitContainer className="h-100 d-md-flex flex-column justify-content-end ">
             <Col className="d-md-flex justify-content-around px-0 py-4 grid-footer" >
             <div className="d-flex flex-column h-50 justify-content-around align-self-center logo-cont ">
             
@@ -455,10 +477,14 @@ const App = () => {
 
             </Col>
 
+           
+           <Col xs={12}>
+              <p className="text-center text-white"> Author rights </p>
+           </Col>
+
             
           </SplitContainer>
      
-
       </footer>
       
     </div>
