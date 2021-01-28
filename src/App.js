@@ -2,7 +2,7 @@ import React from 'react';
 import {Header,AppleStoreButton,GoogleStoreButton, GradientButton} from './components'
 import {SplitContainer} from './containers'
 import {IOS_URL,ANDROID_URL,location, FACEBOOK, TWITTER, INSTAGRAM, YOUTUBE, WINDOWS_INSTALLER, LINUX_INSTALLER, MAC_OS_INSTALLER, MATRIX_URL} from './utils/const'
-import {Col} from 'react-bootstrap'
+import {Col,Row} from 'react-bootstrap'
 import Image1 from './assets/img-01.png'
 import Image2 from './assets/img-02.png'
 import Image3 from './assets/img-03.png'
@@ -30,10 +30,10 @@ const App = () => {
       <div>
         <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex  align-items-start" id="first-container">
          <Col className="d-md-block d-none"  xs={1} lg={2}/>
-         <Col className=" d-flex flex-column justify-content-center align-items-md-start" xs={8} md={5} lg={3} >
+         <Col className=" d-flex flex-column justify-content-center mt-7 align-items-md-start" xs={8} md={5} lg={3} >
       
           <h2> Build and Connect Vinix Blast App </h2>   
-          <p className="jumbo">In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
+          <p className="jumbo mb-4">In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
           <GradientButton   title="Get Vinix Blast" />
         
                   
@@ -45,11 +45,11 @@ const App = () => {
         </SplitContainer>
             
       </div>
-      <SplitContainer className="cont d-flex flex-column justify-content-center">
-            <Col className="d-flex justify-content-center" md={5} lg={6}>
+      <SplitContainer className=" cont-2 d-flex flex-column justify-content-center">
+            <Col className="d-flex justify-content-end" md={5} lg={6}>
                 <img src={Image2} className="image2"/>
             </Col>
-            <Col md={7} lg={3}>
+            <Col md={7} lg={3} className="align-self-center ml-5">
             <h3>Vinix Blast Users</h3>
             <p className="fw-bold">Ea nisi fugiat nostrud duis ss sdsdf tetur labore eiusmod amet et qui veniam cillum ullamc sdfsdf sdfsdo.</p> 
             <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
@@ -63,33 +63,41 @@ const App = () => {
               </div>
               </Col>
       </SplitContainer>
-      <SplitContainer className="medium-container m-0 px-0 mt-4 mt-lg-0">
-        <Col md={1} lg={3}>
+      <SplitContainer className="medium-container m-0 px-0 mt-4 ">
+        <Col md={1} lg={2}>
         </Col>
-         <Col lg={6} md={10}>
-            <div>
-                <h3 className="text-center">Header Title</h3>
-                <p> runt commodo consectetur ad idillum velit.
-                Do dolore amet magna magna non. Velit adipisicing ipsum deserunt culpa sit commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
-            <div>
-                <img src={Image3} className="position-absolute image-2"/>
-              </div> 
-            </div>
-         </Col> 
-         <Col  md={1} lg={3}>
+         <Col lg={8} md={10}>
+         <Row>
+          <Col lg={2}/>
+          <Col lg={8}>
+                  <h3 className="text-center">Vinix Blast Developers</h3>
+                  <p className="pt-2 mb-0"> runt commodo consectetur ad idillum velit.
+                  Do dolore amet magna magna non. Velit adipisicing ipsum deseruntt commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
+              
+            </Col>
+            <Col lg={2}/>
+            <Col>
+              <img src={Image3} className="position-absolute image2  w-100"/>
+            </Col>
+
+         </Row>
+           
+         </Col>
+             
+         <Col  md={1} lg={2}>
         </Col>
       </SplitContainer>
       <SplitContainer className="small-cont m-0">
         <Col id="waved">
           <div className="w-100 pt-4 d-flex justify-content-between flex-column align-items-md-center" >
-              <Col className="mt-5 pt-5 d-flex justify-content-around align-items-start buttons-container" xs={12} md={4} >
+              <Col className="pt-5 d-flex justify-content-around align-items-start buttons-container" xs={12} md={4} >
                   <GradientButton title="Windows" Logo={<FaWindows/>} onClick={()=>window.open(WINDOWS_INSTALLER)} />
                   <GradientButton title="Linux" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}/>
                   <GradientButton title="MacOS" Logo={<DiApple/>} onClick={()=>window.open(MAC_OS_INSTALLER)} />
               </Col>
-              <Col className="d-flex justify-content-center align-items-center flex-column py-4 " md={8} lg={6}>
+              <Col className="d-flex justify-content-center align-items-center flex-column pb-1 pt-5  mt-5 " md={8} lg={4}>
                 <h3 className="mt-5">Pricing Plans </h3>
-                <p> Ad ex ad da elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
+                <p className="text-center"> Ad ex ad da elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
           </div>
         </Col>
@@ -109,174 +117,188 @@ const App = () => {
                 
                 <hr/>
                 <List>
+                  <ListSubheader className="text-center pricing-subheader" disableSticky={true}>
+                      All of these porwerful features    
+                  </ListSubheader>
                   <ListItem >
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Exeullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation amco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes herr laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Eorum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded gradient-button-curved"/>
+              <GradientButton title="Get Started" className="w-100 rounded gradient-button-curved" font="Mada-Semi"  weight="bolder"/>
             </div>
             {/* SECOND CARD */}
             <div>
             <div className="p-2 pricing-card card shadow-sm border-bottom-0">
-             
-                <div className="d-flex flex-column justify-content-around align-items-center">
-                  <h5>Free</h5>
-                  <p>Small text...</p>
-                  <h5>$0.00<span className="month">/month</span></h5>
+              <div className="d-flex flex-column justify-content-around align-items-center">
+                <h5>Free</h5>
+                <p>Small text...</p>
+                <h5>$0.00<span className="month">/month</span></h5>
 
-                </div>
+              </div>
+                
                 <hr/>
                 <List>
-                  <ListItem>
+                <ListSubheader className="text-center pricing-subheader" disableSticky={true}>
+                      All of these porwerful features    
+                  </ListSubheader>
+                  <ListItem >
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Exeullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation amco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes herr laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Eorum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded gradient-button-curved"/>
+              <GradientButton title="Get Started" className="w-100 rounded gradient-button-curved" font="Mada-Semi"  weight="bolder"/>
             </div>
 
             {/* THIRD CARD */}
             <div>
             <div className="p-2 pricing-card card shadow-sm border-bottom-0">
-            <div className="d-flex flex-column justify-content-around align-items-center">
-                  <h5>Free</h5>
-                  <p>Small text...</p>
-                  <h5>$0.00<span className="month">/month</span></h5>
+              <div className="d-flex flex-column justify-content-around align-items-center">
+                <h5>Free</h5>
+                <p>Small text...</p>
+                <h5>$0.00<span className="month">/month</span></h5>
 
-                </div>
+              </div>
+                
                 <hr/>
                 <List>
-                  <ListItem>
+                <ListSubheader className="text-center pricing-subheader" disableSticky={true}>
+                      All of these porwerful features    
+                  </ListSubheader>
+                  <ListItem >
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Exeullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation amco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes herr laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Eorum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded gradient-button-curved"/>
+              <GradientButton title="Get Started" className="w-100 rounded gradient-button-curved" font="Mada-Semi"  weight="bolder"/>
             </div>
             {/* FOURTH CARD */}
             <div>
             <div className="p-2 pricing-card card shadow-sm border-bottom-0">
-                 <div className="d-flex flex-column justify-content-around align-items-center">
-                    <h5>Free</h5>
-                    <p>Small text...</p>
-                    <h5>$0.00<span className="month">/month</span></h5>
+              <div className="d-flex flex-column justify-content-around align-items-center">
+                <h5>Free</h5>
+                <p>Small text...</p>
+                <h5>$0.00<span className="month">/month</span></h5>
 
-                </div>
+              </div>
+                
                 <hr/>
                 <List>
+                <ListSubheader className="text-center pricing-subheader" disableSticky={true}>
+                      All of these porwerful features    
+                  </ListSubheader>
                   <ListItem >
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Exeullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Exercitation amco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes herr laborum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                   <ListItem>
                     <ListItemIcon>
                       <CheckCircleOutline/>
-                      <ListItemText secondary="Option 1 text goes here.Exercitation consequat duis est laborum velit eu pariatur laborum ullamco eiusmod amet." className="m-0 pl-2"/>
+                      <ListItemText secondary="Option 1 text goes here.Eorum ullamco eiusmod amet." className="m-0 pl-2"/>
                     </ListItemIcon>
                   </ListItem>
 
                 </List>
               </div>
-              <GradientButton title="Title1" className="w-100 rounded gradient-button-curved"/>
+              <GradientButton title="Get Started" className="w-100 rounded gradient-button-curved" font="Mada-Semi" weight="bolder"/>
             </div>
           </div>
         </Col>
 
       </SplitContainer>
-      <SplitContainer className="small-container my-md-4 my-2  d-flex flex-column justify-content-center  ">
+      <SplitContainer className="small-container my-md-4 my-2  d-flex flex-column justify-content-end  ">
        
              <Col  />
               <Col md={8} lg={4}>

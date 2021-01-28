@@ -4,10 +4,11 @@ import './button.scss'
 
 
 
-const useStyles= makeStyles((theme)=>({
+const useStyles=({font,weight})=>makeStyles((theme)=>({
     root:{
+        fontWeight: weight? weight : "normal",
         borderRadius:'200px',
-        fontFamily: 'Mada-SemiBold',
+        fontFamily: font? font : 'Mada-SemiBold',
         textTransform: 'none',
         padding: '7px 40px',
         fontSize: '20px',
@@ -27,9 +28,9 @@ const useStyles= makeStyles((theme)=>({
     }
 }))
 
-const Button = ({title,Logo,className,onClick}) => {
+const Button = ({title,Logo,className,onClick,font,weight}) => {
     console.log("Logo?",Logo);
-    const {root} = useStyles()
+    const {root} = useStyles({font,weight})();
     return (
         
             Logo? (

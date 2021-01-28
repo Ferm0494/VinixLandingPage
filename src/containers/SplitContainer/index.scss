@@ -1,16 +1,21 @@
 .cont{
-    height:45em;
+    height:65em;
     width:100%;
    
 }
 
+.cont-2{
+    height:45em;
+    width:100%;
+}
+
 
 .image1{
-    width:33em;
+    width:50em;
 }
 
 .image2{
-    width:28em;
+    width:38em;
 }
 
 
@@ -18,8 +23,9 @@
 @media (max-width: 991.98px) { 
     .image1{
         
-      height:33rem;
-     
+      height:33em;
+      width: 30em;
+      object-fit: contain;      
     }
 
     .image2{
@@ -31,17 +37,12 @@
    }
 @media (max-width: 767.98px) { 
      
-        #first-container{
-            background:url('../../assets/img-01.png') no-repeat rgba(224, 224, 227,0.5);
-            background-size: 70vw;
-            background-position:right top;
-            height: 35em !important
-           
-        }
-
+     
+    
         .image2{
-            width:12em;
-            height:12em;
+            width:10em;
+            height: 10em;
+            
         }
 
         .cont{

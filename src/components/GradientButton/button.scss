@@ -18,6 +18,7 @@
 
 .gradient-button-curved{
     @include main-button;
+    font-family: 'Mada-Semi';
     background:url('../../assets/gradient-button.png');
     background-size: cover;
     background-color: transparent !important;
