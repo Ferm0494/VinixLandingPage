@@ -52,7 +52,7 @@ const App = () => {
             <div className="align-self-center">
             <h3>Vinix Blast Users</h3>
             <Row className="px-0">
-              <Col lg={9}>
+              <Col md={8} lg={9} >
                   <p className="fw-bold">Ea nisi fugiat nostrud duis ss sdsdf tetur labore eiusmod amet et qui veniam cillum ullamc sdfsdf sdfsdo.</p> 
                   <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
@@ -74,14 +74,14 @@ const App = () => {
         </Col>
          <Col lg={8} md={10} >
          <Row>
-          <Col lg={2}/>
-          <Col lg={8}>
+          <Col md={2} lg={2}/>
+          <Col md={8}  lg={8}>
                   <h3 className="text-center">Vinix Blast Developers</h3>
                   <p className="pt-2 mb-0"> runt commodo consectetur ad idillum velit.
                   Do dolore amet magna magna non. Velit adipisicing ipsum deseruntt commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               
             </Col>
-            <Col lg={2}/>
+            <Col md={2} lg={2}/>
         </Row>
            
          </Col>
@@ -99,7 +99,7 @@ const App = () => {
                   <GradientButton title="Linux (64 bit)" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}  font='Mada-Semi' weight="Bold" width="220px"  className=" gradient-button px-4 ml-3"/>
                  
               </div>
-              <Col className="  d-flex justify-content-center align-items-center flex-column  " md={8} lg={4}>
+              <Col className="  d-flex justify-content-center align-items-center flex-column  " md={5} lg={4}>
                 <h3 className="mt-5">Pricing Plans </h3>
                 <p className="text-center"> Ad ex ad da elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
@@ -305,9 +305,9 @@ const App = () => {
       <SplitContainer className="small-container mt-md-4 mb-md-5 my-2  d-flex flex-column justify-content-end  ">
        
              <Col  />
-              <Col md={8} lg={4}>
+              <Col md={5} lg={4}>
                 <h3 className="text-center">Vinix Features </h3>
-                <p className="text-lg-center"> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ea. In excepteur in nisi deserunt irure amet consectetur id.</p>
+                <p className="text-md-center"> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ea. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
               <Col/>
       </SplitContainer>
@@ -317,7 +317,7 @@ const App = () => {
         
           <h4>Team Chat</h4>
           <Row className="px-0">
-              <Col lg={9}>
+              <Col md={8} lg={9}>
                   <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
@@ -328,7 +328,7 @@ const App = () => {
         
           <h4>Text Messaging</h4>
           <Row className="px-0">
-              <Col lg={9}>
+              <Col md={8} lg={9}>
                   <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
@@ -341,7 +341,7 @@ const App = () => {
         
           <h4>Voice Video Calls</h4>
           <Row className="px-0">
-              <Col lg={9}>
+              <Col md={8} lg={9}>
                   <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
@@ -353,7 +353,7 @@ const App = () => {
         
           <h4>Text Messaging</h4>
           <Row className="px-0">
-              <Col lg={9}>
+              <Col md={8} lg={9}>
                   <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
@@ -369,7 +369,7 @@ const App = () => {
         <Col xs={12}  id="info-matrix" className=" d-flex p-4 flex-lg-row flex-column ">
        
 
-          <Col xs={12}  lg={6}>
+          <Col xs={12}  md={6}>
               <h4 className="text-white ">A part of the Matrix ecosystem</h4>
               <Col lg={10} className="px-0">
                     <p className="text-white"> officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
@@ -386,14 +386,14 @@ const App = () => {
       
       </SplitContainer>
       <SplitContainer className="medium-container mt-4 d-flex flex-column justify-content-center ali">
-          <Col lg={4} md={2}/>
+          <Col lg={4} md={3}/>
           <Col className="d-md-flex flex-column align-items-center justify-content-around  small-container ">
             <h3>Ready to get Started?</h3>
-            <p >Cupidatat exercitation qui dolor aliqua voluptate cillum voluptate pariatur.Occaecat pariatur aute ad aute eiusmod.  aute ad aute eiusmod</p>
+            <p className="text-center" >Cupidatat exercitation qui dolor aliqua voluptate cillum voluptate pariatur.Occaecat pariatur aute ad aute eiusmod.  aute ad aute eiusmod</p>
             <GradientButton title="Get Vinix Blast" className="gradient-button"/>
 
           </Col>
-          <Col lg={4} md={2}/>
+          <Col lg={4} md={3}/>
       </SplitContainer>
       <footer>
       <SplitContainer className="h-100 d-md-flex flex-column justify-content-end ">

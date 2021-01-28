@@ -8,14 +8,14 @@ import GradientButton from '../GradientButton'
 
 const Header = ()=>{
     return(
-        <AppBar position="absolute" className="header position-absolute d-flex  " color="transparent" style={{boxShadow:'none'}} >
+        <AppBar position="absolute" className="position-absolute header  d-flex w-100 " color="transparent" style={{boxShadow:'none'}} >
         <Toolbar className=" px-lg-3 px-md-0">
          <Row className="w-100">
          <Col/>
-         <Col md={2} lg={1} className="d-flex align-items-center">
+         <Col md={2} lg={1} className="d-flex align-items-lg-center">
             <img src={Logo} className="logo" /> 
          </Col>        
-                <Col md={10} lg={9} className="options d-flex px-0 justify-content-center">
+                <Col md={9} lg={9} className="options d-flex px-0 justify-content-center">
                
                  <Button className="options mx-4">Product</Button>
                
@@ -29,7 +29,7 @@ const Header = ()=>{
 
                 <Button className="options mx-4">Blog</Button> 
           
-                <GradientButton title="Download Now" className="gradient-button px-0 px-lg-4 "/> 
+                <GradientButton title="Download Now" className="gradient-button  px-lg-4 "/> 
                 
             </Col>
          </Row>
