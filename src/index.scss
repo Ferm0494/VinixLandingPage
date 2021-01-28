@@ -97,9 +97,7 @@ footer{
   font-size: 0.5em;
 }
 
-.buttons-container{
-  margin-top: 4em;
-}
+
 
 #waved{
   background: url('./assets/WaveBackground.png');
@@ -118,13 +116,14 @@ footer{
 
 }
 
-#grid-features{
+.grid-features{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 38em 38em;
   grid-template-rows: repeat (4,1fr);
   grid-row-gap: 3em;
-  grid-column-gap: 1em;
+  grid-column-gap: 14em;
 }
+
 
 .grid-container{
   display:grid;
@@ -250,4 +249,10 @@ footer{
 
 
 }
+
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1300px !important
+  }
+  }
 

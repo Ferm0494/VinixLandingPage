@@ -45,25 +45,31 @@ const App = () => {
         </SplitContainer>
             
       </div>
-      <SplitContainer className=" cont-2 d-flex flex-column justify-content-center">
-            <Col className="d-flex justify-content-end" md={5} lg={6}>
-                <img src={Image2} className="image2"/>
-            </Col>
-            <Col md={7} lg={3} className="align-self-center ml-5">
+      <div className=" grid-features container ">
+            
+                <img src={Image2} className="image2 "/>
+            
+            <div className="align-self-center">
             <h3>Vinix Blast Users</h3>
-            <p className="fw-bold">Ea nisi fugiat nostrud duis ss sdsdf tetur labore eiusmod amet et qui veniam cillum ullamc sdfsdf sdfsdo.</p> 
-            <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
-            Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
+            <Row className="px-0">
+              <Col lg={9}>
+                  <p className="fw-bold">Ea nisi fugiat nostrud duis ss sdsdf tetur labore eiusmod amet et qui veniam cillum ullamc sdfsdf sdfsdo.</p> 
+                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+                    Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
+              </Col>
+              
+            </Row>
 
-              <div className="d-flex w-100 buttons-container">
+              <div className="d-flex w-100 mt-2">
                
               <AppleStoreButton url={IOS_URL}/>
               <GoogleStoreButton url={ANDROID_URL}/>
               
               </div>
-              </Col>
-      </SplitContainer>
-      <SplitContainer className="medium-container m-0 px-0 mt-4 ">
+              </div>
+             
+      </div>
+      <SplitContainer className="medium-container mt-6  ">
         <Col md={1} lg={2}>
         </Col>
          <Col lg={8} md={10}>
@@ -307,7 +313,7 @@ const App = () => {
               </Col>
               <Col/>
       </SplitContainer>
-     <div id="grid-features" className="fixed-container container mb-md-5">
+     <div  className="grid-features fixed-container container mb-md-5">
         <img src={Image4} className="image2" />
         <div className="align-self-center">
         
