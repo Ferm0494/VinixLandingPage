@@ -30,9 +30,9 @@ const App = () => {
       <div>
         <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex  align-items-start" id="first-container">
          <Col className="d-md-block d-none"  xs={1} lg={2}/>
-         <Col className=" d-flex flex-column justify-content-center mt-7 align-items-md-start" xs={8} md={5} lg={3} >
+         <Col className=" d-flex flex-column justify-content-md-center  mt-7 align-items-md-start align-items-center" xs={12} md={5} lg={3} >
       
-          <h2> Build and Connect Vinix Blast App </h2>   
+          <h2 className=""> Build and Connect Vinix Blast App </h2>   
           <p className="jumbo mb-4">In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
           <GradientButton   title="Get Vinix Blast" />
         
