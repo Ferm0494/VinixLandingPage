@@ -21,6 +21,10 @@
 
 
 @media (max-width: 991.98px) { 
+
+    .ml-md-0{
+        margin-left: 0;
+    }
     .image1{
         
       width: 45em;
@@ -33,14 +37,23 @@
 
    }
 @media (max-width: 767.98px) { 
-     
-     
-    
-        .image2{
-            width:10em;
-            height: 10em;
-            
+    .image2{
+        width:100%;
+    }
+
+    .welcome-container{
+        height:29em;
+    }
+  
+    .grid-features{
+         grid-template-columns: 1fr;
+          
         }
+
+    .mt-16{
+        margin-top:16em;
+    }
+
 
         .cont{
             height:fit-content;

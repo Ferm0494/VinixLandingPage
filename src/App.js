@@ -29,38 +29,40 @@ const App = () => {
       }
       <div>
         <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex  align-items-start" id="first-container">
-         <Col className="d-md-block d-none"  xs={1} lg={2}/>
-         <Col className=" d-flex flex-column justify-content-md-center  mt-7 align-items-md-start align-items-center" xs={12} md={5} lg={3} >
+         <Col className="d-md-block"  xs={1} lg={2}/>
+         <Col className=" d-flex flex-column justify-content-around welcome-container justify-content-md-center  mt-7 align-items-md-start align-items-center" xs={10} md={5} lg={3} >
       
-          <h2 className=""> Build and Connect Vinix Blast App </h2>   
-          <p className="jumbo mb-4">In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
+          <h2 className="text-sm-center text-md-left"> Build and Connect Vinix Blast App </h2>   
+          <p className="jumbo mb-4 text-sm-center text-md-left">In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
           <GradientButton   title="Get Vinix Blast" />
         
                   
          </Col>
 
-         <Col className=" d-none d-md-flex  justify-content-end px-0"  md={6} lg={7} >
-            <img src={Image1} className="image1"/>
+         <Col className=" d-none d-md-flex  justify-content-end px-0" xs={1}  md={6} lg={7} >
+            <img src={Image1} className="d-none d-md-block image1 m-md-0"/>
          </Col>
         </SplitContainer>
             
       </div>
-      <div className=" grid-features container ">
+      <div className=" grid-features container mt-16 ">
             
                 <img src={Image2} className="image2 "/>
             
             <div className="align-self-center">
-            <h3>Vinix Blast Users</h3>
+            <h3 className="text-sm-center text-md-left">Vinix Blast Users</h3>
             <Row className="px-0">
-              <Col md={8} lg={9} >
-                  <p className="fw-bold">Ea nisi fugiat nostrud duis ss sdsdf tetur labore eiusmod amet et qui veniam cillum ullamc sdfsdf sdfsdo.</p> 
-                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+            <Col className="d-block d-md-none" />
+              <Col xs={10} md={8} lg={9} >
+                  <p className="fw-bold text-sm-center text-md-left">Ea nisi fugiat nostrud duis ss sdsdf tetur labore eiusmod amet et qui veniam cillum uo.</p> 
+                  <p className=" text-sm-center text-md-left"> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
+              <Col className="d-block d-md-none" />
               
             </Row>
 
-              <div className="d-flex w-100 mt-2">
+              <div className="d-flex  w-100 mt-2 buttons-container justify-content-center justify-content-md-start">
                
               <AppleStoreButton url={IOS_URL}/>
               <GoogleStoreButton url={ANDROID_URL}/>
@@ -69,19 +71,19 @@ const App = () => {
               </div>
              
       </div>
-      <SplitContainer className="medium-container  mt-7 pt-3 ">
+      <SplitContainer className="medium-container  mt-7 mt-none pt-3 ">
         <Col md={1} lg={2}>
         </Col>
          <Col lg={8} md={10} >
          <Row>
-          <Col md={2} lg={2}/>
-          <Col md={8}  lg={8}>
+          <Col xs={1} md={2} lg={2}/>
+          <Col xs={10} md={8}  lg={8}>
                   <h3 className="text-center">Vinix Blast Developers</h3>
                   <p className="pt-2 mb-0"> runt commodo consectetur ad idillum velit.
                   Do dolore amet magna magna non. Velit adipisicing ipsum deseruntt commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               
             </Col>
-            <Col md={2} lg={2}/>
+            <Col  xs={1} md={2} lg={2}/>
         </Row>
            
          </Col>
