@@ -24,9 +24,11 @@ const App = () => {
   
   return (
     <div>
-      {
-        window.innerWidth > 767.98 ?<Header/> : null
-      }
+      {/* {
+        window.innerWidth > 767.98 ?<Header/> : <MobileHeader/>
+      } */}
+
+      <Header/>
       <div>
         <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex  align-items-start" id="first-container">
          <Col className="d-md-block"  xs={1} lg={2}/>
@@ -363,7 +365,7 @@ const App = () => {
      </div>
    
      
-      <SplitContainer className="container  mt-7  matrix-container">
+      <SplitContainer className="container  mt-7  px-4 px-md-0 ">
         
         <Col xs={12}  id="info-matrix" className=" d-flex p-4 flex-lg-row flex-column justify-content-around justify-content-md-start ">
        
@@ -386,7 +388,7 @@ const App = () => {
       </SplitContainer>
       <SplitContainer className="medium-container mt-4 d-flex flex-column justify-content-center ali">
           <Col lg={4} md={3}/>
-          <Col className="d-md-flex flex-column align-items-center justify-content-around  small-container ">
+          <Col className="d-flex flex-column align-items-center justify-content-md-around justify-content-between  small-container ">
             <h3>Ready to get Started?</h3>
             <p className="text-center" >Cupidatat exercitation qui dolor aliqua voluptate cillum voluptate pariatur.Occaecat pariatur aute ad aute eiusmod.  aute ad aute eiusmod</p>
             <GradientButton title="Get Vinix Blast" className="gradient-button"/>

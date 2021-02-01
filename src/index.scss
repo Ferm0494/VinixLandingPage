@@ -225,6 +225,14 @@ footer{
   .mt-none{
     margin-top:0;
   }
+
+  .medium-container{
+    height: 35em;
+  }
+
+  .small-container {
+    height: 30em;
+}
  
   #first-container{
     background-image: url('./assets/img-01.png') ;
@@ -233,9 +241,7 @@ footer{
     height: 75em;
   }
 
-  #waved{
-    margin-top:15em;
-  }
+
 
   #info-matrix{
   
@@ -243,6 +249,12 @@ footer{
     background-image: url('https://element.io/images/matrix-bg-right-01.svg');
     background-repeat: no-repeat;
     background-position: 100% 0%;
+    h5{
+      margin-bottom: 0.5em; 
+    }
+    p{
+      margin-bottom:2em;
+    }
   }
  
   body{
@@ -319,18 +331,21 @@ footer{
       }
     }
     footer{
-      height: fit-content;
+      background: url('./assets/footervector.svg');
+      height: fit-content; 
       background-size: cover;
       background-repeat: no-repeat;
+      
     }
     
     
     .grid-footer{
+      margin-top:25em;
       display:grid;
       grid-column-gap: 0.2em;
-      grid-row-gap: 0.2em;
-      grid-template-columns: repeat(4,1fr);
-      grid-template-rows: repeat(2,1fr);
+      grid-row-gap: 2em;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(3,1fr);
       
      .logo-cont{
        display:flex;
@@ -339,18 +354,23 @@ footer{
       align-items: center;
       height: 100% !important;
         img{
-          height:3em;
-          width:8em;
+          height:7em;
+          width:18em;
         }
 
         svg{
-          height: 2em;
-          width: 2em;
+          margin-left: 0.5em;
+          height: 4em;
+          width: 4em;
         }
        grid-column: 1/-1;
      }
+    ul{
+      padding: 2em 5em;
+    }
       li{
-      font-size: 0.6rem;
+     
+      font-size: 1.6rem;
        
       }
       
