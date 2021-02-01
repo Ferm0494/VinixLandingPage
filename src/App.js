@@ -24,10 +24,7 @@ const App = () => {
   
   return (
     <div>
-      {/* {
-        window.innerWidth > 767.98 ?<Header/> : <MobileHeader/>
-      } */}
-
+  
       <Header/>
       <div>
         <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex  align-items-start" id="first-container">
@@ -398,7 +395,7 @@ const App = () => {
       </SplitContainer>
       <footer>
       <SplitContainer className="h-100 d-md-flex flex-column justify-content-end ">
-            <Col className="d-md-flex justify-content-around px-0 py-4 grid-footer" >
+            <Col className="d-md-flex justify-content-around px-0 py-4 grid-footer " >
             <div className="d-flex flex-column h-50 justify-content-around align-self-center logo-cont ">
             
                 <img src={Logo2} />
