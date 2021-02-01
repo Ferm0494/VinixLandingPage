@@ -51,16 +51,13 @@ const App = () => {
             
             <div className="align-self-center">
             <h3 className="text-sm-center text-md-left">Vinix Blast Users</h3>
-            <Row className="px-0">
-            <Col className="d-block d-md-none" />
-              <Col xs={10} md={8} lg={9} >
-                  <p className="fw-bold text-sm-center text-md-left">Ea nisi fugiat nostrud duis ss sdsdf tetur labore eiusmod amet et qui veniam cillum uo.</p> 
-                  <p className=" text-sm-center text-md-left"> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+          
+              <Col md={8} lg={9} >
+                  <p className="fw-bold text-sm-center text-md-left px-4 px-md-0 ">Ea nisi fugiat nostrud duis ss sdsdf tetur labore eiusmod amet et qui veniam cillum uo.</p> 
+                  <p className="  px-4 px-md-0 "> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
-              <Col className="d-block d-md-none" />
-              
-            </Row>
+            
 
               <div className="d-flex  w-100 mt-2 buttons-container justify-content-center justify-content-md-start">
                
@@ -75,21 +72,18 @@ const App = () => {
         <Col md={1} lg={2}>
         </Col>
          <Col lg={8} md={10} >
-         <Row>
-          <Col xs={1} md={2} lg={2}/>
-          <Col xs={10} md={8}  lg={8}>
+
+        
+         
                   <h3 className="text-center">Vinix Blast Developers</h3>
-                  <p className="pt-2 mb-0"> runt commodo consectetur ad idillum velit.
+                  <p className="pt-2 mb-0 px-4 px-md-0 "> runt commodo consectetur ad idillum velit.
                   Do dolore amet magna magna non. Velit adipisicing ipsum deseruntt commodo adipisicing mollit cupidatat anim deserunt laborum. Sit velit sint cillum elit adipisicing nostrud. Commodo commodo adipisicing enim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
-              
-            </Col>
-            <Col  xs={1} md={2} lg={2}/>
-        </Row>
+
            
          </Col>
              
-         <Col  md={1} lg={2}/>
-         <img src={Image3} className="position-relative mx-auto mw-100"/>
+         <Col md={1} lg={2}/>
+         <img  src={Image3} className="position-relative mx-auto mw-100 h-100"/>
        
       </SplitContainer>
       <SplitContainer className="small-cont m-0">
@@ -101,9 +95,12 @@ const App = () => {
                   <GradientButton title="Linux (64 bit)" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}  font='Mada-Semi' weight="Bold" width="220px"  className=" gradient-button px-4 ml-3"/>
                  
               </div>
-              <Col className="  d-flex justify-content-center align-items-center flex-column  " md={5} lg={4}>
-                <h3 className="mt-5">Pricing Plans </h3>
-                <p className="text-center"> Ad ex ad da elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
+              <Col    md={5} lg={4}>
+                <Row className="  d-flex justify-content-center align-items-center flex-column  ">
+                  <h3 className="mt-5">Pricing Plans </h3>
+                  <p className="text-center px-4 px-md-0 "> Ad ex ad da elit cupidatat Lorem commodo adipisicing nisi aliqua. In excepteur in nisi deserunt irure amet consectetur id.</p>
+                </Row>
+                
               </Col>
           </div>
         </Col>
@@ -309,7 +306,7 @@ const App = () => {
              <Col  />
               <Col md={5} lg={4}>
                 <h3 className="text-center">Vinix Features </h3>
-                <p className="text-md-center"> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ea. In excepteur in nisi deserunt irure amet consectetur id.</p>
+                <p className="text-md-center px-4 px-md-0 "> Ad ex ad dolore pariatur. Dolore aute commodo nostrud incididunt sunt. Incididunt fugiat ea. In excepteur in nisi deserunt irure amet consectetur id.</p>
               </Col>
               <Col/>
       </SplitContainer>
@@ -317,10 +314,10 @@ const App = () => {
         <img src={Image4} className="image2" />
         <div className=" align-self-center">
         
-          <h4>Team Chat</h4>
+          <h4 className="text-center text-md-left">Team Chat</h4>
           <Row className="px-0">
               <Col md={8} lg={9}>
-                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+                  <p className="px-4 px-md-0 "> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
               
@@ -328,10 +325,10 @@ const App = () => {
         </div>
         <div className="align-self-center">
         
-          <h4>Text Messaging</h4>
+          <h4 className="text-center text-md-left">Text Messaging</h4>
           <Row className="px-0">
               <Col md={8} lg={9}>
-                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+                  <p className="px-4 px-md-0 "> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
               
@@ -341,10 +338,10 @@ const App = () => {
         <img src={Image6} className="image2" />
         <div className="align-self-center">
         
-          <h4>Voice Video Calls</h4>
+          <h4 className="text-center text-md-left">Voice Video Calls</h4>
           <Row className="px-0">
               <Col md={8} lg={9}>
-                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+                  <p className="px-4 px-md-0 "> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
               
@@ -353,10 +350,10 @@ const App = () => {
 
         <div className="align-self-center">
         
-          <h4>Text Messaging</h4>
+          <h4 className="text-center text-md-left">Text Messaging</h4>
           <Row className="px-0">
               <Col md={8} lg={9}>
-                  <p> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
+                  <p className="px-4 px-md-0 "> Amet voluptate veniam alinostrud proident esse. In consectetur dolor id non sint laboris non aliquip incididunt snsdooi osdoisid oidjosdij 
                     Occaecat qui sint ullamco quis duis cillum autit velit sint cinim proident laborum nostrud occaecat Lorem nisi exercitation pariatur ad Lorem tempor.</p>
               </Col>
               

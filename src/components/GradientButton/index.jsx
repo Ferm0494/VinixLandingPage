@@ -18,8 +18,12 @@ const useStyles=({font,weight,width})=>makeStyles((theme)=>({
        },
 
        ['@media (max-width: 767.98px)']:{
-        fontSize: '27px',
-        padding:'15px 50px'
+        width: 'fit-content',
+        fontSize: '1.65rem',
+        padding:'1.5rem 4rem',
+        fontFamily: 'Mada-Semi',
+        fontWeight: 'bold'
+
    },
 
    '&:hover':{
