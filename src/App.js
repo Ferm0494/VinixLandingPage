@@ -311,8 +311,8 @@ const App = () => {
               <Col/>
       </SplitContainer>
      <div  className="grid-features fixed-container container mb-md-5">
-        <img src={Image4} className="image2" />
-        <div className=" align-self-center">
+        <img src={Image4} className="image2 grid-item-1" />
+        <div className=" align-self-center grid-item-2">
         
           <h4 className="text-center text-md-left">Team Chat</h4>
           <Row className="px-0">
@@ -323,7 +323,7 @@ const App = () => {
               
           </Row>         
         </div>
-        <div className="align-self-center">
+        <div className="align-self-center grid-item-4 ">
         
           <h4 className="text-center text-md-left">Text Messaging</h4>
           <Row className="px-0">
@@ -334,9 +334,9 @@ const App = () => {
               
           </Row>          
         </div>
-        <img src={Image5} className="image2"/>
-        <img src={Image6} className="image2" />
-        <div className="align-self-center">
+        <img src={Image5} className="image2 grid-item-3  "/>
+        <img src={Image6} className="image2 " />
+        <div className="align-self-center ">
         
           <h4 className="text-center text-md-left">Voice Video Calls</h4>
           <Row className="px-0">
@@ -348,7 +348,7 @@ const App = () => {
           </Row>          
         </div>
 
-        <div className="align-self-center">
+        <div className="align-self-center grid-item-8 ">
         
           <h4 className="text-center text-md-left">Text Messaging</h4>
           <Row className="px-0">
@@ -359,24 +359,24 @@ const App = () => {
               
         </Row>          
         </div>
-        <img src={Image7} className="image2 mx-auto"/>
+        <img src={Image7} className="image2 mx-auto grid-item-7"/>
      </div>
    
      
-      <SplitContainer className="container  mt-7 ">
+      <SplitContainer className="container  mt-7  matrix-container">
         
-        <Col xs={12}  id="info-matrix" className=" d-flex p-4 flex-lg-row flex-column ">
+        <Col xs={12}  id="info-matrix" className=" d-flex p-4 flex-lg-row flex-column justify-content-around justify-content-md-start ">
        
 
-          <Col xs={12}  md={6}>
-              <h4 className="text-white ">A part of the Matrix ecosystem</h4>
+          <Col xs={12}  md={6} className=" px-5 px-md-3">
+              <h5 className="text-white text-center  text-md-left">A part of the Matrix ecosystem</h5>
               <Col lg={10} className="px-0">
-                    <p className="text-white"> officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
+                    <p className="text-white text-center  text-md-left"> officia mollit laboris id cillum. Nostrud tempor incididunt ex do dolor Lorem nostrud tempor. Laboris nostrud ea quis exercitation nulla enim consectetur Lorem officia veniam anim. Esse excepteur fugiat nulla velit labore duis tempor do consequat ea.
 
       Par. Eiusmod cupidatat do officia eiusmod esse pariatur do pariatur pariatur.</p>
               </Col>
           </Col>
-          <Col className="d-flex justify-content-md-end justify-content-start align-items-end " lg={6} >
+          <Col className="d-flex justify-content-md-end justify-content-center align-items-end " lg={6} >
           <img src={"https://matrix.org/images/matrix-logo-white.svg"} className="mr-3 pr-2 mb-2" />
           <GradientButton Logo={<BsArrowUpRight/>} className="gray-button" title="Matrix.org" onClick={()=> window.open(MATRIX_URL) } right={true} />
           </Col>
