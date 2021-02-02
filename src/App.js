@@ -88,7 +88,7 @@ const App = () => {
       <SplitContainer className="small-cont m-0">
         <Col id="waved">
           <div className="medium-container w-100 pt-4 d-flex justify-content-between flex-column align-items-md-center" >
-              <div className=" h-50 d-flex w-100 justify-content-center align-items-center mt-5">
+              <div className=" h-50 d-flex w-100 justify-content-center align-items-md-center align-items-end mt-5">
                   <GradientButton title="Mac OS" Logo={<DiApple/>} onClick={()=>window.open(MAC_OS_INSTALLER)} font='Mada-Semi' weight="Bold" width="220px" />
                   <GradientButton title="Windows (64 bit)" Logo={<FaWindows/>} onClick={()=>window.open(WINDOWS_INSTALLER)}  font='Mada-Semi' weight="Bold" className=" gradient-button px-4 ml-3"  />
                   <GradientButton title="Linux (64 bit)" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}  font='Mada-Semi' weight="Bold" width="220px"  className=" gradient-button px-4 ml-3"/>
