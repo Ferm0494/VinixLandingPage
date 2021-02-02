@@ -80,7 +80,7 @@ const Header = ({callBack})=>{
                 options.map(option=><Button className="options mx-4">{option}</Button>)
               }
              
-              <GradientButton title="Download Now" className="gradient-button  px-lg-4 "/> 
+              <GradientButton title="Download Now" className="gradient-button  px-lg-4 " onClick={()=> callBack()}/> 
               
           </Col>
        </Row>

@@ -75,7 +75,7 @@ const App = () => {
       <SplitContainer className="medium-container  mt-7 mt-none pt-3 ">
         <Col md={1} lg={2}>
         </Col>
-         <Col lg={8} md={10} >
+         <Col lg={8} md={10} ref={myRef} >
 
         
          
@@ -93,7 +93,7 @@ const App = () => {
       <SplitContainer className="small-cont m-0">
         <Col id="waved">
           <div className="medium-container w-100 pt-4 d-flex justify-content-between flex-column align-items-md-center" >
-              <div className=" h-50 d-flex w-100 justify-content-center align-items-md-center align-items-end mt-5"  ref={myRef}>
+              <div className=" h-50 d-flex w-100 justify-content-center align-items-md-center align-items-end mt-5"  >
                   <GradientButton title="Mac OS" Logo={<DiApple/>} onClick={()=>window.open(MAC_OS_INSTALLER)} font='Mada-Semi' weight="Bold" width="220px" />
                   <GradientButton title="Windows (64 bit)" Logo={<FaWindows/>} onClick={()=>window.open(WINDOWS_INSTALLER)}  font='Mada-Semi' weight="Bold" className=" gradient-button px-4 ml-3"  />
                   <GradientButton title="Linux (64 bit)" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}  font='Mada-Semi' weight="Bold" width="220px"  className=" gradient-button px-4 ml-3"/>
@@ -393,7 +393,7 @@ const App = () => {
           <Col className="d-flex flex-column align-items-center justify-content-md-around justify-content-between  small-container ">
             <h3>Ready to get Started?</h3>
             <p className="text-center" >Cupidatat exercitation qui dolor aliqua voluptate cillum voluptate pariatur.Occaecat pariatur aute ad aute eiusmod.  aute ad aute eiusmod</p>
-            <GradientButton title="Get Vinix Blast" className="gradient-button"/>
+            <GradientButton title="Get Vinix Blast" className="gradient-button" onClick={executeScroll} />
 
           </Col>
           <Col lg={4} md={3}/>
