@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 
 });
 
-const Header = ()=>{
+const Header = ({callBack})=>{
   const classes = useStyles();
   const [state,setState]=useState(false);
   const toggleDrawer = (open) => (event) => {
@@ -101,7 +101,7 @@ const Header = ()=>{
             </React.Fragment>
         
         
-            <IconButton className="main-background getapp">
+            <IconButton className="main-background getapp" onClick={()=> callBack()}>
                 <GetApp/>
             </IconButton>
             

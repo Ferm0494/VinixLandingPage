@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import {Header,AppleStoreButton,GoogleStoreButton, GradientButton} from './components'
 import {SplitContainer} from './containers'
 import {IOS_URL,ANDROID_URL,location, FACEBOOK, TWITTER, INSTAGRAM, YOUTUBE, WINDOWS_INSTALLER, LINUX_INSTALLER, MAC_OS_INSTALLER, MATRIX_URL} from './utils/const'
@@ -21,11 +21,16 @@ import {FaFacebookF,AiOutlineTwitter,AiOutlineInstagram,AiFillYoutube,FaWindows,
 
 
 const App = () => {
+
+  const myRef = useRef(null);
+  const executeScroll = () => myRef.current.scrollIntoView();
+
+
   
   return (
     <div>
   
-      <Header/>
+      <Header callBack={executeScroll}/>
       <div>
         <SplitContainer className="cont gray-background m-0 px-0 d-lg-block d-flex  align-items-start" id="first-container">
          <Col className="d-md-block"  xs={1} lg={2}/>
@@ -33,7 +38,7 @@ const App = () => {
       
           <h2 className="text-sm-center text-md-left"> Build and Connect Vinix Blast App </h2>   
           <p className="jumbo mb-4 text-sm-center text-md-left">In publishing and graphic desing, Lorem ipsum is a place holder text commonly used to demonstrate form of a document or a typeface</p>
-          <GradientButton   title="Get Vinix Blast" />
+          <GradientButton   title="Get Vinix Blast" onClick={executeScroll} />
         
                   
          </Col>
@@ -88,7 +93,7 @@ const App = () => {
       <SplitContainer className="small-cont m-0">
         <Col id="waved">
           <div className="medium-container w-100 pt-4 d-flex justify-content-between flex-column align-items-md-center" >
-              <div className=" h-50 d-flex w-100 justify-content-center align-items-md-center align-items-end mt-5">
+              <div className=" h-50 d-flex w-100 justify-content-center align-items-md-center align-items-end mt-5"  ref={myRef}>
                   <GradientButton title="Mac OS" Logo={<DiApple/>} onClick={()=>window.open(MAC_OS_INSTALLER)} font='Mada-Semi' weight="Bold" width="220px" />
                   <GradientButton title="Windows (64 bit)" Logo={<FaWindows/>} onClick={()=>window.open(WINDOWS_INSTALLER)}  font='Mada-Semi' weight="Bold" className=" gradient-button px-4 ml-3"  />
                   <GradientButton title="Linux (64 bit)" Logo={<FaLinux/>}  onClick={()=>window.open(LINUX_INSTALLER)}  font='Mada-Semi' weight="Bold" width="220px"  className=" gradient-button px-4 ml-3"/>
